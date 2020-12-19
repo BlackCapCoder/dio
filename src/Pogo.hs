@@ -24,7 +24,8 @@ data Pogo i
           , d :: i   -- Initial distance to the candy
           , c :: i } -- Circle circumference
    deriving
-     ( Show, Eq, Ord, Functor
+     ( Show, Eq, Ord
+     , Functor, Foldable
      )
 
 -- H = Number of hops to land on the candy

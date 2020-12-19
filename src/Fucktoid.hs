@@ -1,22 +1,27 @@
+{-# OPTIONS_GHC -Wno-partial-type-signatures #-}
+
 -- A small fucktoid turing-tarpit
 --
 module Fucktoid where
 
 import Data.Semigroup
+
 import ListZipper
 import Pogo
+import Iso
 
 
-data FOp
-   = Jmp Int
-   | Jnz Program
+data FOp i
+   = Jmp i
+   | Jnz (Program i)
    | Neg
   deriving
     ( Show, Eq, Ord
+    , Functor, Foldable
     )
 
-type Program
-   = [FOp]
+type Program i
+   = [FOp i]
 
 type Tape
    = Lz Bit
@@ -31,7 +36,8 @@ pattern I = True  :: Bit
 blankTape :: Int -> Tape
 blankTape s = Lz' [] $ replicate s O
 
-runFuck :: Tape -> Program -> Tape =
+runFuck :: _ => Tape -> Program i -> Tape
+runFuck =
   foldl $ flip \case
     Neg   -> modify not
     Jnz x -> until copoint (`runFuck` x)
@@ -45,10 +51,33 @@ runFuck :: Tape -> Program -> Tape =
 runFuck' =
   runFuck $ blankTape 30_000
 
+----
 
-pogoOP :: Pogo Int -> FOp
-pogoOP Pogo {..}
-  = Jnz [ Jmp d, Neg, Jmp (l-d) ]
+isoPogoOp :: _ => Maybe (Pogo a) <-> Maybe (a, FOp a)
+isoPogoOp = Iso
+  do fmap $ liftA2 (,) c pogoOp
+  do (>>= uncurry opPogo)
+
+
+pogoOp Pogo {..} =
+  Jnz $ [ Jmp d | d /= 0 ]
+     ++ [ Neg ]
+     ++ [ Jmp x | let x = l-d, x /= 0 ]
+
+opPogo :: _ => i -> FOp i -> Maybe $ Pogo i
+opPogo c op@(Jnz xs)
+  =
+  [ Pogo { l = sum op
+         , d = sum . Jnz $ takeWhile (/=Neg) xs
+         , c }
+  | let
+
+  -- A single Neg
+  , 1 == length (filter (==Neg) xs)
+
+  -- No layered loops
+  , not $ flip any xs \case Jnz _ -> True; _ -> False
+  ]
 
 ----
 

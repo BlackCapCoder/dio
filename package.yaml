@@ -9,6 +9,14 @@ dependencies:
 - arithmoi
 - integer-roots
 - semirings
+tests:
+  full:
+    main:                Main.hs
+    source-dirs:         test
+    dependencies:
+    - dio
+    - microspec
+
 default-extensions:
 - AllowAmbiguousTypes
 - ApplicativeDo

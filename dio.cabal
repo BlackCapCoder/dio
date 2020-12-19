@@ -32,3 +32,24 @@ library
     , semirings
     , transformers
   default-language: Haskell2010
+
+test-suite full
+  type: exitcode-stdio-1.0
+  main-is: Main.hs
+  other-modules:
+      Paths_dio
+  hs-source-dirs:
+      test
+  default-extensions: AllowAmbiguousTypes ApplicativeDo Arrows BangPatterns BinaryLiterals BlockArguments ConstrainedClassMethods ConstraintKinds DataKinds DefaultSignatures DeriveAnyClass DeriveDataTypeable DeriveFoldable DeriveFunctor DeriveGeneric DeriveLift DeriveTraversable DerivingStrategies DerivingVia DisambiguateRecordFields DoAndIfThenElse DuplicateRecordFields EmptyCase EmptyDataDecls EmptyDataDeriving ExistentialQuantification ExplicitForAll ExplicitNamespaces ExtendedDefaultRules FlexibleContexts FlexibleInstances FunctionalDependencies GADTSyntax GADTs GeneralizedNewtypeDeriving HexFloatLiterals ImplicitParams ImportQualifiedPost InstanceSigs KindSignatures LambdaCase LiberalTypeSynonyms MagicHash MonadComprehensions MultiParamTypeClasses MultiWayIf NamedFieldPuns NamedWildCards NoMonomorphismRestriction NoStarIsType NondecreasingIndentation NumDecimals NumericUnderscores OverloadedLabels OverloadedStrings PackageImports ParallelArrays ParallelListComp PartialTypeSignatures PatternGuards PatternSynonyms PolyKinds PostfixOperators QuantifiedConstraints QuasiQuotes RankNTypes RecordWildCards RecursiveDo RelaxedLayout RelaxedPolyRec RoleAnnotations ScopedTypeVariables StandaloneDeriving StandaloneKindSignatures TransformListComp TupleSections TypeApplications TypeFamilies TypeFamilyDependencies TypeInType TypeOperators TypeSynonymInstances UnboxedSums UnboxedTuples UnicodeSyntax ViewPatterns
+  build-depends:
+      MyPrelude
+    , arithmoi
+    , base-noprelude >=4.7
+    , containers
+    , dio
+    , integer-roots
+    , microspec
+    , mtl
+    , semirings
+    , transformers
+  default-language: Haskell2010
