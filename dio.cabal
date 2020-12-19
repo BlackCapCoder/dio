@@ -11,6 +11,11 @@ build-type:     Simple
 library
   exposed-modules:
       Dio
+      Fucktoid
+      Linear
+      ListZipper
+      Pogo
+      Termination
   other-modules:
       Paths_dio
   hs-source-dirs:
