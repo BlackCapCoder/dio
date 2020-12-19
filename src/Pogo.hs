@@ -13,7 +13,7 @@ import Data.Euclidean
 
    Examples:
      (C=10, D=1, L=2) -> no solution
-     (C=23, D=3, L=5) -> 19 jumps
+     (C=23, D=3, L=5) -> 19 hops
 
    D = H*L (mod C)
    D = H*L - T*C
@@ -96,7 +96,7 @@ countCell p@Pogo {..} i t
 
   Equivalient FOp:
 
-    Jz [Jmp 3, Neg, Jmp 2]
+    Jnz [Jmp 3, Neg, Jmp 2]
 
   Equivalient Pogo:
 

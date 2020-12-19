@@ -29,5 +29,5 @@ left = \case
 -- Shift right
 right = \case
   Lz  ls x (r:rs) -> Lz (x:ls) r rs
-  Lz' ls rs       -> Lz' rs (reverse ls)
+  Lz' ls rs       -> Lz' [] (reverse ls <> rs)
 
