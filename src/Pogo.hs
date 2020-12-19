@@ -14,6 +14,9 @@ import Data.Euclidean
    Examples:
      (C=10, D=1, L=2) -> no solution
      (C=23, D=3, L=5) -> 19 jumps
+
+   D = H*L (mod C)
+   D = H*L - T*C
 -}
 
 data Pogo i
@@ -24,11 +27,6 @@ data Pogo i
      ( Show, Eq, Ord, Functor
      )
 
-
--- How many jumps to get back to the starting point?
-roundtrip Pogo {..} =
-  div c $ gcd c l
-
 -- H = Number of hops to land on the candy
 getH Pogo {..} t =
   div (d + t*c) l
@@ -37,16 +35,10 @@ getH Pogo {..} t =
 getT Pogo {..} h =
   div (h*l - d) c
 
--- D = H*L (mod C)
--- D = H*L - T*C
+-- How many jumps to get back to the starting point?
+roundtrip Pogo {..} =
+  div c $ gcd c l
 
-
--- Linear: ax + by = c
--- Pogo:   HL - TC = D
-isoPogoLin :: Pogo n <-> Linear n
-isoPogoLin =
-  Iso do \Pogo {l=a, c=b, d=c} -> Lin  {..}
-      do \Lin  {a=l, b=c, c=d} -> Pogo {..}
 
 -- Solve for H
 solvePogo Pogo {..}
@@ -57,19 +49,27 @@ solvePogo Pogo {..}
     (g,h) = gcdExt l c
     x     = d*h + c*div (d*h) (-c)
 
+-- Pogo is isomorphic to Linear
+--
+-- Linear: ax + by = c
+-- Pogo:   HL - TC = D
+--
+isoPogoLin :: Pogo n <-> Linear n
+isoPogoLin =
+  Iso do \Pogo {l=a, c=b, d=c} -> Lin  {..}
+      do \Lin  {a=l, b=c, c=d} -> Pogo {..}
+
 
 -- When will we first land on the
--- cell at index 'i'?
+-- cell at index I?
 --
 -- Returns a new Pogo such that
 -- solving for H gives the answer
---
 cell Pogo {..} i
    = Pogo { d = mod (i - d) c, .. }
 
 -- Number of times we have landed on
--- cell 'i' after 't' time
---
+-- cell I after T time
 countCell p@Pogo {..} i t
   =
     fromMaybe 0
@@ -84,4 +84,40 @@ countCell p@Pogo {..} i t
 
     -- floor $ g + c/h + q/h
     pure $ div (g*h + c + q) h
+
+----
+
+{-
+  Pogo can emulate fucktoid loops.
+
+  Boolfuck code:
+
+    [ >>> ! >> ]
+
+  Equivalient FOp:
+
+    Jz [Jmp 3, Neg, Jmp 2]
+
+  Equivalient Pogo:
+
+    Pogo { l = 5 -- number of > (minus number of <)
+         , d = 3 -- index  of ! }
+
+  Under this interpretation of Pogo ..
+
+    C = length of the memory tape
+    L = total distance jumped in a single iteration
+    D = distance jumped before the Neg instruction
+    H = number of iterations before halting
+-}
+
+
+-- The loop diverges iff False
+halts =
+  isJust . solvePogo
+
+-- The state of cell I at time T
+-- assuming it was False initially
+cellState p i t
+  = odd $ countCell p i t
 

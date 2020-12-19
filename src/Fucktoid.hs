@@ -1,4 +1,5 @@
--- A small fucktoid tarpit
+-- A small fucktoid turing-tarpit
+--
 module Fucktoid where
 
 import ListZipper
@@ -13,11 +14,18 @@ data FOp
 type Program
    = [FOp]
 
-type Bit  = Bool
-type Tape = Lz Bit
+type Tape
+   = Lz Bit
+
+type Bit
+   = Bool
+
+pattern O = False :: Bit
+pattern I = True  :: Bit
+
 
 blankTape :: Int -> Tape
-blankTape s = Lz' [] $ replicate s False
+blankTape s = Lz' [] $ replicate s O
 
 runFuck :: Tape -> Program -> Tape =
   foldr \case

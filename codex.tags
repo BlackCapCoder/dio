@@ -2019,6 +2019,7 @@ BindTrans (ReaderT e)	/home/blackcap/.cabal/packages/hackage.haskell.org/semigro
 BindTrans (Strict-StateT s)	/home/blackcap/.cabal/packages/hackage.haskell.org/semigroupoids/5.3.4/semigroupoids-5.3.4/src/Data/Functor/Bind/Trans.hs	58
 BindTrans IdentityT	/home/blackcap/.cabal/packages/hackage.haskell.org/semigroupoids/5.3.4/semigroupoids-5.3.4/src/Data/Functor/Bind/Trans.hs	43
 Birecursive	./MyPrelude/src/Recursion.hs	15
+Bit	./src/Fucktoid.hs	16
 BitGravity	/home/blackcap/.cabal/packages/hackage.haskell.org/X11/1.8/X11-1.8/Graphics/X11/Types.hsc	1729
 BitMap	/home/blackcap/.cabal/packages/hackage.haskell.org/containers/0.5.10.2/containers-0.5.10.2/Data/IntSet/Internal.hs	262
 BitMap	/home/blackcap/.cabal/packages/hackage.haskell.org/containers/0.6.2.1/containers-0.6.2.1/src/Data/IntSet/Internal.hs	278
@@ -2704,6 +2705,7 @@ ConvArray	/home/blackcap/.cabal/packages/hackage.haskell.org/base/4.10.0.0/base-
 ConvArray	/home/blackcap/.cabal/packages/hackage.haskell.org/base/4.10.0.0/base-4.10.0.0/GHC/IO/Encoding/CodePage/Table.hs	41
 CoordinateMode	/home/blackcap/.cabal/packages/hackage.haskell.org/X11/1.8/X11-1.8/Graphics/X11/Types.hsc	1646
 Copointed BTree	./MyPrelude/src/BTree.hs	88
+Copointed Lz	./src/ListZipper.hs	7
 Copy	/home/blackcap/.cabal/packages/hackage.haskell.org/bytestring/0.10.8.2/bytestring-0.10.8.2/tests/builder/Data/ByteString/Builder/Tests.hs	174
 CopyFile001	/home/blackcap/.cabal/packages/hackage.haskell.org/directory/1.3.1.5/directory-1.3.1.5/tests/CopyFile001.hs	2
 CopyFile002	/home/blackcap/.cabal/packages/hackage.haskell.org/directory/1.3.1.5/directory-1.3.1.5/tests/CopyFile002.hs	2
@@ -3136,6 +3138,7 @@ Digit23	/home/blackcap/.cabal/packages/hackage.haskell.org/containers/0.5.10.2/c
 Digit23	/home/blackcap/.cabal/packages/hackage.haskell.org/containers/0.6.2.1/containers-0.6.2.1/src/Data/Sequence/Internal.hs	638
 Digits	/home/blackcap/.cabal/packages/hackage.haskell.org/base/4.10.0.0/base-4.10.0.0/Text/Read/Lex.hs	411
 Dimension	/home/blackcap/.cabal/packages/hackage.haskell.org/X11/1.8/X11-1.8/Graphics/X11/Xlib/Types.hsc	179
+Dio	./src/Dio.hs	1
 DirStream	/home/blackcap/.cabal/packages/hackage.haskell.org/unix/2.7.2.2/unix-2.7.2.2/System/Posix/Directory/Common.hsc	40
 DirStreamOffset	/home/blackcap/.cabal/packages/hackage.haskell.org/unix/2.7.2.2/unix-2.7.2.2/System/Posix/Directory/Common.hsc	62
 Directed	/home/blackcap/.cabal/packages/hackage.haskell.org/trifecta/2.1/trifecta-2.1/src/Text/Trifecta/Delta.hs	86
@@ -3655,6 +3658,7 @@ FFFormat	/home/blackcap/.cabal/packages/hackage.haskell.org/base/4.10.0.0/base-4
 FFGeneric	/home/blackcap/.cabal/packages/hackage.haskell.org/base/4.10.0.0/base-4.10.0.0/GHC/Float.hs	648
 FFlag	/home/blackcap/.cabal/packages/hackage.haskell.org/base/4.10.0.0/base-4.10.0.0/GHC/Event/KQueue.hsc	170
 FILETIME	/home/blackcap/.cabal/packages/hackage.haskell.org/base/4.10.0.0/base-4.10.0.0/System/CPUTime/Windows.hsc	51
+FOp	./src/Fucktoid.hs	8
 FP	/home/blackcap/.cabal/packages/hackage.haskell.org/bytestring/0.10.8.2/bytestring-0.10.8.2/Data/ByteString/Builder/Prim/Internal.hs	151
 FPFormat	/home/blackcap/.cabal/packages/hackage.haskell.org/text/1.2.4.0/text-1.2.4.0/Data/Text/Lazy/Builder/RealFloat.hs	32
 Fact	/home/blackcap/.cabal/packages/hackage.haskell.org/type-settheory/0.1.3.1/type-settheory-0.1.3.1/Type/Logic.hs	80
@@ -3947,6 +3951,7 @@ FromJSON TDS	/home/blackcap/.cabal/packages/hackage.haskell.org/haskell-lsp-type
 FromJSON a => FromJSON (ResponseMessage a)	/home/blackcap/.cabal/packages/hackage.haskell.org/haskell-lsp-types/0.21.0.0/haskell-lsp-types-0.21.0.0/src/Language/Haskell/LSP/Types/Message.hs	394
 Fst	/home/blackcap/.cabal/packages/hackage.haskell.org/type-settheory/0.1.3.1/type-settheory-0.1.3.1/Type/Function.hs	603
 Fst	/home/blackcap/.cabal/packages/hackage.haskell.org/type-settheory/0.1.3.1/type-settheory-0.1.3.1/Type/Function.hs	604
+Fucktoid	./src/Fucktoid.hs	2
 Full	/home/blackcap/.cabal/packages/hackage.haskell.org/containers/0.5.10.2/containers-0.5.10.2/Data/Sequence/Internal.hs	2361
 Full	/home/blackcap/.cabal/packages/hackage.haskell.org/containers/0.6.2.1/containers-0.6.2.1/src/Data/Sequence/Internal.hs	2568
 Full	/home/blackcap/.cabal/packages/hackage.haskell.org/xmonad/0.13/xmonad-0.13/src/XMonad/Layout.hs	47
@@ -4710,6 +4715,7 @@ Ix i => Traversable (Array i)	/home/blackcap/.cabal/packages/hackage.haskell.org
 J	/home/blackcap/.cabal/packages/hackage.haskell.org/text/1.2.4.0/text-1.2.4.0/Data/Text/Internal/Fusion/Common.hs	188
 JS	/home/blackcap/.cabal/packages/hackage.haskell.org/text/1.2.4.0/text-1.2.4.0/Data/Text/Internal/Fusion/Common.hs	751
 January	/home/blackcap/.cabal/packages/hackage.haskell.org/old-time/1.1.0.3/old-time-1.1.0.3/System/Time.hsc	132
+Jmp	./src/Fucktoid.hs	9
 Join	./MyPrelude/src/TypeUtils.hs	26
 Join	/home/blackcap/.cabal/packages/hackage.haskell.org/semigroupoids/5.3.4/semigroupoids-5.3.4/src/Data/Functor/Bind/Class.hs	791
 JoinStyle	/home/blackcap/.cabal/packages/hackage.haskell.org/X11/1.8/X11-1.8/Graphics/X11/Types.hsc	1609
@@ -4727,6 +4733,7 @@ Just2	/home/blackcap/.cabal/packages/hackage.haskell.org/text/1.2.4.0/text-1.2.4
 JustS	/home/blackcap/.cabal/packages/hackage.haskell.org/containers/0.5.10.2/containers-0.5.10.2/Utils/Containers/Internal/StrictMaybe.hs	15
 JustS	/home/blackcap/.cabal/packages/hackage.haskell.org/containers/0.6.2.1/containers-0.6.2.1/src/Utils/Containers/Internal/StrictMaybe.hs	15
 Justify	/home/blackcap/.cabal/packages/hackage.haskell.org/text/1.2.4.0/text-1.2.4.0/Data/Text/Internal/Fusion/Common.hs	482
+Jz	./src/Fucktoid.hs	10
 K1	/home/blackcap/.cabal/packages/hackage.haskell.org/base/4.10.0.0/base-4.10.0.0/GHC/Generics.hs	832
 K1	/home/blackcap/.cabal/packages/hackage.haskell.org/semigroupoids/5.3.4/semigroupoids-5.3.4/src/Data/Functor/Bind/Class.hs	486
 KEvent	/home/blackcap/.cabal/packages/hackage.haskell.org/base/4.10.0.0/base-4.10.0.0/GHC/Event/KQueue.hsc	130
@@ -4843,9 +4850,11 @@ Lift	/home/blackcap/.cabal/packages/hackage.haskell.org/transformers/0.5.6.2/tra
 Lift Text	/home/blackcap/.cabal/packages/hackage.haskell.org/text/1.2.4.0/text-1.2.4.0/Data/Text.hs	431
 Lift Text	/home/blackcap/.cabal/packages/hackage.haskell.org/text/1.2.4.0/text-1.2.4.0/Data/Text/Lazy.hs	416
 Limit	/home/blackcap/.cabal/packages/hackage.haskell.org/base/4.10.0.0/base-4.10.0.0/System/Posix/Types.hs	240
+Lin	./src/Linear.hs	8
 LineBuffering	/home/blackcap/.cabal/packages/hackage.haskell.org/base/4.10.0.0/base-4.10.0.0/GHC/IO/Handle/Types.hs	244
 LineSeparator	/home/blackcap/.cabal/packages/hackage.haskell.org/base/4.10.0.0/base-4.10.0.0/GHC/Unicode.hs	125
 LineStyle	/home/blackcap/.cabal/packages/hackage.haskell.org/X11/1.8/X11-1.8/Graphics/X11/Types.hsc	1594
+Linear	./src/Linear.hs	1
 Lines	/home/blackcap/.cabal/packages/hackage.haskell.org/trifecta/2.1/trifecta-2.1/src/Text/Trifecta/Delta.hs	75
 Lines	/home/blackcap/.cabal/packages/hackage.haskell.org/trifecta/2.1/trifecta-2.1/src/Text/Trifecta/Delta.hs	162
 Lines	/home/blackcap/.cabal/packages/hackage.haskell.org/trifecta/2.1/trifecta-2.1/src/Text/Trifecta/Rendering.hs	147
@@ -4858,6 +4867,7 @@ ListT	/home/blackcap/.cabal/packages/hackage.haskell.org/directory/1.3.1.5/direc
 ListT	/home/blackcap/.cabal/packages/hackage.haskell.org/semigroupoids/5.3.4/semigroupoids-5.3.4/src/Data/Functor/Alt.hs	249
 ListT	/home/blackcap/.cabal/packages/hackage.haskell.org/semigroupoids/5.3.4/semigroupoids-5.3.4/src/Data/Functor/Bind/Class.hs	351
 ListT	/home/blackcap/.cabal/packages/hackage.haskell.org/transformers/0.5.6.2/transformers-0.5.6.2/Control/Monad/Trans/List.hs	56
+ListZipper	./src/ListZipper.hs	1
 Listen	/home/blackcap/.cabal/packages/hackage.haskell.org/transformers/0.5.6.2/transformers-0.5.6.2/Control/Monad/Signatures.hs	48
 Lit	/home/blackcap/.cabal/packages/hackage.haskell.org/trifecta/2.1/trifecta-2.1/src/Text/Trifecta/Tutorial.hs	29
 LiteralRuleTest	/home/blackcap/.cabal/packages/hackage.haskell.org/text/1.2.4.0/text-1.2.4.0/tests/LiteralRuleTest.hs	3
@@ -4895,6 +4905,9 @@ LowerElement	/home/blackcap/.cabal/packages/hackage.haskell.org/type-settheory/0
 LowercaseLetter	/home/blackcap/.cabal/packages/hackage.haskell.org/base/4.10.0.0/base-4.10.0.0/GHC/Unicode.hs	103
 LspId	/home/blackcap/.cabal/packages/hackage.haskell.org/haskell-lsp-types/0.21.0.0/haskell-lsp-types-0.21.0.0/src/Language/Haskell/LSP/Types/Message.hs	18
 LspIdRsp	/home/blackcap/.cabal/packages/hackage.haskell.org/haskell-lsp-types/0.21.0.0/haskell-lsp-types-0.21.0.0/src/Language/Haskell/LSP/Types/Message.hs	41
+Lz	./src/ListZipper.hs	3
+Lz	./src/ListZipper.hs	13
+Lz'	./src/ListZipper.hs	4
 M	/home/blackcap/.cabal/packages/hackage.haskell.org/containers/0.5.10.2/containers-0.5.10.2/tests/seq-properties.hs	812
 M.member	/home/blackcap/.cabal/packages/hackage.haskell.org/containers/0.5.10.2/containers-0.5.10.2/tests/intmap-strictness.hs	47
 M.member	/home/blackcap/.cabal/packages/hackage.haskell.org/containers/0.5.10.2/containers-0.5.10.2/tests/map-strictness.hs	48
@@ -5543,6 +5556,7 @@ Natural	/home/blackcap/.cabal/packages/hackage.haskell.org/base/4.10.0.0/base-4.
 Natural	/home/blackcap/.cabal/packages/hackage.haskell.org/base/4.10.0.0/base-4.10.0.0/GHC/Natural.hs	463
 Natural	/home/blackcap/.cabal/packages/hackage.haskell.org/base/4.10.0.0/base-4.10.0.0/GHC/Natural.hs	486
 Natural	/home/blackcap/.cabal/packages/hackage.haskell.org/base/4.10.0.0/base-4.10.0.0/GHC/Natural.hs	518
+Neg	./src/Fucktoid.hs	11
 NestedAtomically	/home/blackcap/.cabal/packages/hackage.haskell.org/base/4.10.0.0/base-4.10.0.0/Control/Exception/Base.hs	366
 NestedAtomically	/home/blackcap/.cabal/packages/hackage.haskell.org/base/4.10.0.0/base-4.10.0.0/Control/Exception/Base.hs	366
 NestedAtomically	/home/blackcap/.cabal/packages/hackage.haskell.org/extensible-exceptions/0.1.1.4/extensible-exceptions-0.1.1.4/Control/Exception/Extensible.hs	564
@@ -5884,6 +5898,8 @@ PathIsSymbolicLink	/home/blackcap/.cabal/packages/hackage.haskell.org/directory/
 PathNameLimit	/home/blackcap/.cabal/packages/hackage.haskell.org/unix/2.7.2.2/unix-2.7.2.2/System/Posix/Files/Common.hsc	534
 PathVar	/home/blackcap/.cabal/packages/hackage.haskell.org/unix/2.7.2.2/unix-2.7.2.2/System/Posix/Files/Common.hsc	528
 Paths_MyPrelude	./MyPrelude/dist-newstyle/build/x86_64-linux/ghc-8.11.0.20191220/MyPrelude-0.1.0.0/build/autogen/Paths_MyPrelude.hs	4
+Paths_MyPrelude	./dist-newstyle/build/x86_64-linux/ghc-8.11.0.20191220/MyPrelude-0.1.0.0/build/autogen/Paths_MyPrelude.hs	4
+Paths_dio	./dist-newstyle/build/x86_64-linux/ghc-8.11.0.20191220/dio-0.0.0/build/autogen/Paths_dio.hs	4
 PatternMatchFail	/home/blackcap/.cabal/packages/hackage.haskell.org/base/4.10.0.0/base-4.10.0.0/Control/Exception/Base.hs	262
 PatternMatchFail	/home/blackcap/.cabal/packages/hackage.haskell.org/extensible-exceptions/0.1.1.4/extensible-exceptions-0.1.1.4/Control/Exception/Extensible.hs	659
 PatternMatchFail	/home/blackcap/.cabal/packages/hackage.haskell.org/extensible-exceptions/0.1.1.4/extensible-exceptions-0.1.1.4/Control/Exception/Extensible.hs	659
@@ -5929,6 +5945,8 @@ Plus f => Plus (Static f a)	/home/blackcap/.cabal/packages/hackage.haskell.org/s
 Plus f => Plus (Strict-RWST r w s f)	/home/blackcap/.cabal/packages/hackage.haskell.org/semigroupoids/5.3.4/semigroupoids-5.3.4/src/Data/Functor/Plus.hs	167
 Plus f => Plus (Strict-StateT e f)	/home/blackcap/.cabal/packages/hackage.haskell.org/semigroupoids/5.3.4/semigroupoids-5.3.4/src/Data/Functor/Plus.hs	155
 Plus f => Plus (Strict-WriterT w f)	/home/blackcap/.cabal/packages/hackage.haskell.org/semigroupoids/5.3.4/semigroupoids-5.3.4/src/Data/Functor/Plus.hs	161
+Pogo	./src/Pogo.hs	19
+Pogo	./src/Pogo.hs	20
 Point	/home/blackcap/.cabal/packages/hackage.haskell.org/X11/1.8/X11-1.8/Graphics/X11/Xlib/Types.hsc	224
 Point	/home/blackcap/.cabal/packages/hackage.haskell.org/X11/1.8/X11-1.8/Graphics/X11/Xlib/Types.hsc	224
 Pointed BTree	./MyPrelude/src/BTree.hs	85
@@ -6002,6 +6020,7 @@ Product	/home/blackcap/.cabal/packages/hackage.haskell.org/transformers/0.5.6.2/
 ProfFlags	/home/blackcap/.cabal/packages/hackage.haskell.org/base/4.10.0.0/base-4.10.0.0/GHC/RTS/Flags.hsc	234
 ProfFlags	/home/blackcap/.cabal/packages/hackage.haskell.org/base/4.10.0.0/base-4.10.0.0/GHC/RTS/Flags.hsc	234
 Profunctor It	/home/blackcap/.cabal/packages/hackage.haskell.org/trifecta/2.1/trifecta-2.1/src/Text/Trifecta/Util/It.hs	89
+Program	./src/Fucktoid.hs	13
 Progress	/home/blackcap/.cabal/packages/hackage.haskell.org/haskell-lsp-types/0.21.0.0/haskell-lsp-types-0.21.0.0/src/Language/Haskell/LSP/Types/Message.hs	222
 ProgressNumericToken	/home/blackcap/.cabal/packages/hackage.haskell.org/haskell-lsp-types/0.21.0.0/haskell-lsp-types-0.21.0.0/src/Language/Haskell/LSP/Types/Progress.hs	10
 ProgressParams	/home/blackcap/.cabal/packages/hackage.haskell.org/haskell-lsp-types/0.21.0.0/haskell-lsp-types-0.21.0.0/src/Language/Haskell/LSP/Types/Window.hs	248
@@ -7028,6 +7047,7 @@ SnocBuilder	/home/blackcap/.cabal/packages/hackage.haskell.org/base/4.10.0.0/bas
 SnocRTree	/home/blackcap/.cabal/packages/hackage.haskell.org/containers/0.5.10.2/containers-0.5.10.2/Data/Sequence/Internal.hs	1662
 SnocRTree	/home/blackcap/.cabal/packages/hackage.haskell.org/containers/0.6.2.1/containers-0.6.2.1/src/Data/Sequence/Internal.hs	1866
 Solo	/home/blackcap/.cabal/packages/hackage.haskell.org/text/1.2.4.0/text-1.2.4.0/tests/Tests/Properties.hs	120
+Solution	./src/Linear.hs	15
 Solution:	/home/blackcap/.cabal/packages/hackage.haskell.org/base/4.10.0.0/base-4.10.0.0/Data/Traversable.hs	218
 Some	/home/blackcap/.cabal/packages/hackage.haskell.org/text/1.2.4.0/text-1.2.4.0/Data/Text/Encoding.hs	260
 SomeAsyncException	/home/blackcap/.cabal/packages/hackage.haskell.org/base/4.10.0.0/base-4.10.0.0/GHC/IO/Exception.hs	176
@@ -7382,6 +7402,7 @@ TaggedQueue	/home/blackcap/.cabal/packages/hackage.haskell.org/containers/0.6.2.
 Tall	/home/blackcap/.cabal/packages/hackage.haskell.org/xmonad/0.13/xmonad-0.13/src/XMonad/Layout.hs	53
 Tall	/home/blackcap/.cabal/packages/hackage.haskell.org/xmonad/0.13/xmonad-0.13/src/XMonad/Layout.hs	53
 Tannen	/home/blackcap/.cabal/packages/hackage.haskell.org/semigroupoids/5.3.4/semigroupoids-5.3.4/src/Data/Functor/Bind/Class.hs	803
+Tape	./src/Fucktoid.hs	17
 Tardis	/home/blackcap/.cabal/packages/hackage.haskell.org/tardis/0.4.1.0/tardis-0.4.1.0/Control/Monad/Trans/Tardis.hs	68
 TardisT	/home/blackcap/.cabal/packages/hackage.haskell.org/tardis/0.4.1.0/tardis-0.4.1.0/Control/Monad/Trans/Tardis.hs	56
 TdSyncFull	/home/blackcap/.cabal/packages/hackage.haskell.org/haskell-lsp-types/0.21.0.0/haskell-lsp-types-0.21.0.0/src/Language/Haskell/LSP/Types/DataTypesJSON.hs	187
@@ -7389,10 +7410,12 @@ TdSyncIncremental	/home/blackcap/.cabal/packages/hackage.haskell.org/haskell-lsp
 TdSyncNone	/home/blackcap/.cabal/packages/hackage.haskell.org/haskell-lsp-types/0.21.0.0/haskell-lsp-types-0.21.0.0/src/Language/Haskell/LSP/Types/DataTypesJSON.hs	186
 TelemetryEvent	/home/blackcap/.cabal/packages/hackage.haskell.org/haskell-lsp-types/0.21.0.0/haskell-lsp-types-0.21.0.0/src/Language/Haskell/LSP/Types/Message.hs	223
 TelemetryNotification	/home/blackcap/.cabal/packages/hackage.haskell.org/haskell-lsp-types/0.21.0.0/haskell-lsp-types-0.21.0.0/src/Language/Haskell/LSP/Types/DataTypesJSON.hs	934
+Term	./src/Termination.hs	44
 TerminalAttributes	/home/blackcap/.cabal/packages/hackage.haskell.org/unix/2.7.2.2/unix-2.7.2.2/System/Posix/Terminal/Common.hsc	95
 TerminalMode	/home/blackcap/.cabal/packages/hackage.haskell.org/unix/2.7.2.2/unix-2.7.2.2/System/Posix/Terminal/Common.hsc	104
 TerminalState	/home/blackcap/.cabal/packages/hackage.haskell.org/unix/2.7.2.2/unix-2.7.2.2/System/Posix/Terminal/Common.hsc	384
 Terminated	/home/blackcap/.cabal/packages/hackage.haskell.org/unix/2.7.2.2/unix-2.7.2.2/System/Posix/Process/Internals.hs	18
+Termination	./src/Termination.hs	43
 Test	/home/blackcap/.cabal/packages/hackage.haskell.org/bytestring/0.10.8.2/bytestring-0.10.8.2/tests/TestFramework.hs	31
 Test	/home/blackcap/.cabal/packages/hackage.haskell.org/filepath/1.4.1.2/filepath-1.4.1.2/tests/Test.hs	2
 TestCoercion	/home/blackcap/.cabal/packages/hackage.haskell.org/base/4.10.0.0/base-4.10.0.0/Data/Type/Coercion.hs	100
@@ -9470,6 +9493,8 @@ bindIO	/home/blackcap/.cabal/packages/hackage.haskell.org/base/4.10.0.0/base-4.1
 bindSTM	/home/blackcap/.cabal/packages/hackage.haskell.org/base/4.10.0.0/base-4.10.0.0/GHC/Conc/Sync.hs	671
 binding	/home/blackcap/.cabal/packages/hackage.haskell.org/xmonad/0.13/xmonad-0.13/util/GenerateManpage.hs	49
 bindir	./MyPrelude/dist-newstyle/build/x86_64-linux/ghc-8.11.0.20191220/MyPrelude-0.1.0.0/build/autogen/Paths_MyPrelude.hs	30
+bindir	./dist-newstyle/build/x86_64-linux/ghc-8.11.0.20191220/MyPrelude-0.1.0.0/build/autogen/Paths_MyPrelude.hs	30
+bindir	./dist-newstyle/build/x86_64-linux/ghc-8.11.0.20191220/dio-0.0.0/build/autogen/Paths_dio.hs	30
 binotElem	/home/blackcap/.cabal/packages/hackage.haskell.org/base/4.10.0.0/base-4.10.0.0/Data/Bifoldable.hs	419
 binull	/home/blackcap/.cabal/packages/hackage.haskell.org/base/4.10.0.0/base-4.10.0.0/Data/Bifoldable.hs	309
 bioSelector	/home/blackcap/.cabal/packages/hackage.haskell.org/base/4.10.0.0/base-4.10.0.0/GHC/RTS/Flags.hsc	248
@@ -9587,6 +9612,7 @@ bla	/home/blackcap/.cabal/packages/hackage.haskell.org/text/1.2.4.0/text-1.2.4.0
 bla_len	/home/blackcap/.cabal/packages/hackage.haskell.org/text/1.2.4.0/text-1.2.4.0/benchmarks/haskell/Benchmarks/Pure.hs	46
 blankCompOpt	/home/blackcap/.cabal/packages/hackage.haskell.org/regex-base/0.94.0.0/regex-base-0.94.0.0/src/Text/Regex/Base/RegexLike.hs	79
 blankExecOpt	/home/blackcap/.cabal/packages/hackage.haskell.org/regex-base/0.94.0.0/regex-base-0.94.0.0/src/Text/Regex/Base/RegexLike.hs	80
+blankTape	./src/Fucktoid.hs	19
 blb	/home/blackcap/.cabal/packages/hackage.haskell.org/text/1.2.4.0/text-1.2.4.0/benchmarks/haskell/Benchmarks/Pure.hs	41
 bll	/home/blackcap/.cabal/packages/hackage.haskell.org/text/1.2.4.0/text-1.2.4.0/benchmarks/haskell/Benchmarks/Pure.hs	50
 block	/home/blackcap/.cabal/packages/hackage.haskell.org/base/4.10.0.0/base-4.10.0.0/GHC/IO.hs	241
@@ -9796,6 +9822,8 @@ bytes2ProcessIDAndLock	/home/blackcap/.cabal/packages/hackage.haskell.org/unix/2
 bytesAllocated	/home/blackcap/.cabal/packages/hackage.haskell.org/base/4.10.0.0/base-4.10.0.0/GHC/Stats.hsc	212
 bytesCopied	/home/blackcap/.cabal/packages/hackage.haskell.org/base/4.10.0.0/base-4.10.0.0/GHC/Stats.hsc	227
 bytesInArray	/home/blackcap/.cabal/packages/hackage.haskell.org/text/1.2.4.0/text-1.2.4.0/Data/Text/Array.hs	147
+c	./src/Linear.hs	8
+c	./src/Pogo.hs	22
 c	/home/blackcap/.cabal/packages/hackage.haskell.org/base/4.10.0.0/base-4.10.0.0/Data/Data.hs	522
 c2w	/home/blackcap/.cabal/packages/hackage.haskell.org/bytestring/0.10.8.2/bytestring-0.10.8.2/Data/ByteString/Internal.hs	532
 cCharSize	/home/blackcap/.cabal/packages/hackage.haskell.org/base/4.10.0.0/base-4.10.0.0/GHC/Foreign.hs	190
@@ -9933,6 +9961,10 @@ catchError	/home/blackcap/.cabal/packages/hackage.haskell.org/transformers/0.5.6
 catchException	/home/blackcap/.cabal/packages/hackage.haskell.org/base/4.10.0.0/base-4.10.0.0/GHC/IO.hs	144
 catchIO	./MyPrelude/dist-newstyle/build/x86_64-linux/ghc-8.11.0.20191220/MyPrelude-0.1.0.0/build/autogen/Paths_MyPrelude.hs	18
 catchIO	./MyPrelude/dist-newstyle/build/x86_64-linux/ghc-8.11.0.20191220/MyPrelude-0.1.0.0/build/autogen/Paths_MyPrelude.hs	26
+catchIO	./dist-newstyle/build/x86_64-linux/ghc-8.11.0.20191220/MyPrelude-0.1.0.0/build/autogen/Paths_MyPrelude.hs	18
+catchIO	./dist-newstyle/build/x86_64-linux/ghc-8.11.0.20191220/MyPrelude-0.1.0.0/build/autogen/Paths_MyPrelude.hs	26
+catchIO	./dist-newstyle/build/x86_64-linux/ghc-8.11.0.20191220/dio-0.0.0/build/autogen/Paths_dio.hs	18
+catchIO	./dist-newstyle/build/x86_64-linux/ghc-8.11.0.20191220/dio-0.0.0/build/autogen/Paths_dio.hs	26
 catchIO	/home/blackcap/.cabal/packages/hackage.haskell.org/xmonad/0.13/xmonad-0.13/src/XMonad/Core.hs	407
 catchIOError	/home/blackcap/.cabal/packages/hackage.haskell.org/base/4.10.0.0/base-4.10.0.0/System/IO/Error.hs	336
 catchIOError	/home/blackcap/.cabal/packages/hackage.haskell.org/transformers/0.5.6.2/transformers-0.5.6.2/Control/Monad/Trans/Error.hs	93
@@ -9966,6 +9998,8 @@ ceilingDoubleInt	/home/blackcap/.cabal/packages/hackage.haskell.org/base/4.10.0.
 ceilingDoubleInteger	/home/blackcap/.cabal/packages/hackage.haskell.org/base/4.10.0.0/base-4.10.0.0/GHC/Float/RealFracMethods.hs	279
 ceilingFloatInt	/home/blackcap/.cabal/packages/hackage.haskell.org/base/4.10.0.0/base-4.10.0.0/GHC/Float/RealFracMethods.hs	113
 ceilingFloatInteger	/home/blackcap/.cabal/packages/hackage.haskell.org/base/4.10.0.0/base-4.10.0.0/GHC/Float/RealFracMethods.hs	176
+cell	./src/Pogo.hs	67
+cellState	./src/Termination.hs	37
 censor	/home/blackcap/.cabal/packages/hackage.haskell.org/comonad/5.0.6/comonad-5.0.6/src/Control/Comonad/Trans/Traced.hs	109
 censor	/home/blackcap/.cabal/packages/hackage.haskell.org/mtl/2.2.1/mtl-2.2.1/Control/Monad/Writer/Class.hs	98
 censor	/home/blackcap/.cabal/packages/hackage.haskell.org/mtl/2.2.2/mtl-2.2.2/Control/Monad/Writer/Class.hs	101
@@ -10425,6 +10459,7 @@ copied_bytes	/home/blackcap/.cabal/packages/hackage.haskell.org/base/4.10.0.0/ba
 copoint	./MyPrelude/src/BTree.hs	89
 copoint	./MyPrelude/src/Iso.hs	130
 copoint	./MyPrelude/src/Stack.hs	93
+copoint	./src/ListZipper.hs	8
 coproduct	/home/blackcap/.cabal/packages/hackage.haskell.org/comonad/5.0.6/comonad-5.0.6/src/Control/Comonad.hs	214
 copy	/home/blackcap/.cabal/packages/hackage.haskell.org/base/4.10.0.0/base-4.10.0.0/GHC/Event/Array.hs	236
 copy	/home/blackcap/.cabal/packages/hackage.haskell.org/bytestring/0.10.8.2/bytestring-0.10.8.2/Data/ByteString.hs	1587
@@ -10490,6 +10525,7 @@ count	/home/blackcap/.cabal/packages/hackage.haskell.org/bytestring/0.10.8.2/byt
 count	/home/blackcap/.cabal/packages/hackage.haskell.org/bytestring/0.10.8.2/bytestring-0.10.8.2/Data/ByteString/Lazy/Char8.hs	560
 count	/home/blackcap/.cabal/packages/hackage.haskell.org/text/1.2.4.0/text-1.2.4.0/Data/Text.hs	1624
 count	/home/blackcap/.cabal/packages/hackage.haskell.org/text/1.2.4.0/text-1.2.4.0/Data/Text/Lazy.hs	1705
+countCell	./src/Pogo.hs	73
 countChar	/home/blackcap/.cabal/packages/hackage.haskell.org/text/1.2.4.0/text-1.2.4.0/Data/Text.hs	1638
 countChar	/home/blackcap/.cabal/packages/hackage.haskell.org/text/1.2.4.0/text-1.2.4.0/Data/Text/Internal/Fusion.hs	215
 countChar	/home/blackcap/.cabal/packages/hackage.haskell.org/text/1.2.4.0/text-1.2.4.0/Data/Text/Internal/Lazy/Fusion.hs	118
@@ -10623,6 +10659,8 @@ cycleNTimes	/home/blackcap/.cabal/packages/hackage.haskell.org/containers/0.5.10
 cycleNTimes	/home/blackcap/.cabal/packages/hackage.haskell.org/containers/0.6.2.1/containers-0.6.2.1/src/Data/Sequence/Internal.hs	1444
 cycleTaking	/home/blackcap/.cabal/packages/hackage.haskell.org/containers/0.5.10.2/containers-0.5.10.2/Data/Sequence/Internal.hs	1230
 cycleTaking	/home/blackcap/.cabal/packages/hackage.haskell.org/containers/0.6.2.1/containers-0.6.2.1/src/Data/Sequence/Internal.hs	1434
+d	./src/Pogo.hs	21
+d	./src/Termination.hs	44
 dEFAULT_CHAR_BUFFER_SIZE	/home/blackcap/.cabal/packages/hackage.haskell.org/base/4.10.0.0/base-4.10.0.0/GHC/IO/Handle/Internals.hs	436
 dEFAULT_FD_BUFFER_SIZE	/home/blackcap/.cabal/packages/hackage.haskell.org/base/4.10.0.0/base-4.10.0.0/GHC/IO/FD.hs	123
 dEFAULT_OPEN_IN_BINARY_MODE	/home/blackcap/.cabal/packages/hackage.haskell.org/base/4.10.0.0/base-4.10.0.0/GHC/IO/Handle/FD.hs	295
@@ -10693,6 +10731,10 @@ dataTypeRep	/home/blackcap/.cabal/packages/hackage.haskell.org/base/4.10.0.0/bas
 data_	/home/blackcap/.cabal/packages/hackage.haskell.org/base/4.10.0.0/base-4.10.0.0/GHC/Event/KQueue.hsc	136
 datadir	./MyPrelude/dist-newstyle/build/x86_64-linux/ghc-8.11.0.20191220/MyPrelude-0.1.0.0/build/autogen/Paths_MyPrelude.hs	30
 datadir	./MyPrelude/dist-newstyle/build/x86_64-linux/ghc-8.11.0.20191220/MyPrelude-0.1.0.0/build/autogen/Paths_MyPrelude.hs	35
+datadir	./dist-newstyle/build/x86_64-linux/ghc-8.11.0.20191220/MyPrelude-0.1.0.0/build/autogen/Paths_MyPrelude.hs	30
+datadir	./dist-newstyle/build/x86_64-linux/ghc-8.11.0.20191220/MyPrelude-0.1.0.0/build/autogen/Paths_MyPrelude.hs	35
+datadir	./dist-newstyle/build/x86_64-linux/ghc-8.11.0.20191220/dio-0.0.0/build/autogen/Paths_dio.hs	30
+datadir	./dist-newstyle/build/x86_64-linux/ghc-8.11.0.20191220/dio-0.0.0/build/autogen/Paths_dio.hs	35
 datarep	/home/blackcap/.cabal/packages/hackage.haskell.org/base/4.10.0.0/base-4.10.0.0/Data/Data.hs	497
 datatype	/home/blackcap/.cabal/packages/hackage.haskell.org/base/4.10.0.0/base-4.10.0.0/Data/Data.hs	510
 datatypeName	/home/blackcap/.cabal/packages/hackage.haskell.org/base/4.10.0.0/base-4.10.0.0/GHC/Generics.hs	995
@@ -11245,6 +11287,10 @@ dynEq	/home/blackcap/.cabal/packages/hackage.haskell.org/type-settheory/0.1.3.1/
 dynTypeRep	/home/blackcap/.cabal/packages/hackage.haskell.org/base/4.10.0.0/base-4.10.0.0/Data/Dynamic.hs	150
 dynlibdir	./MyPrelude/dist-newstyle/build/x86_64-linux/ghc-8.11.0.20191220/MyPrelude-0.1.0.0/build/autogen/Paths_MyPrelude.hs	30
 dynlibdir	./MyPrelude/dist-newstyle/build/x86_64-linux/ghc-8.11.0.20191220/MyPrelude-0.1.0.0/build/autogen/Paths_MyPrelude.hs	34
+dynlibdir	./dist-newstyle/build/x86_64-linux/ghc-8.11.0.20191220/MyPrelude-0.1.0.0/build/autogen/Paths_MyPrelude.hs	30
+dynlibdir	./dist-newstyle/build/x86_64-linux/ghc-8.11.0.20191220/MyPrelude-0.1.0.0/build/autogen/Paths_MyPrelude.hs	34
+dynlibdir	./dist-newstyle/build/x86_64-linux/ghc-8.11.0.20191220/dio-0.0.0/build/autogen/Paths_dio.hs	30
+dynlibdir	./dist-newstyle/build/x86_64-linux/ghc-8.11.0.20191220/dio-0.0.0/build/autogen/Paths_dio.hs	34
 e	/home/blackcap/.cabal/packages/hackage.haskell.org/semigroupoids/5.3.4/semigroupoids-5.3.4/src/Data/Functor/Bind/Class.hs	494
 e2BIG	/home/blackcap/.cabal/packages/hackage.haskell.org/base/4.10.0.0/base-4.10.0.0/Foreign/C/Error.hs	141
 eACCES	/home/blackcap/.cabal/packages/hackage.haskell.org/base/4.10.0.0/base-4.10.0.0/Foreign/C/Error.hs	142
@@ -14080,6 +14126,8 @@ getAtom	/home/blackcap/.cabal/packages/hackage.haskell.org/xmonad/0.13/xmonad-0.
 getAtomName	/home/blackcap/.cabal/packages/hackage.haskell.org/X11/1.8/X11-1.8/Graphics/X11/Xlib/Atom.hsc	118
 getAtomNames	/home/blackcap/.cabal/packages/hackage.haskell.org/X11/1.8/X11-1.8/Graphics/X11/Xlib/Atom.hsc	131
 getBinDir	./MyPrelude/dist-newstyle/build/x86_64-linux/ghc-8.11.0.20191220/MyPrelude-0.1.0.0/build/autogen/Paths_MyPrelude.hs	39
+getBinDir	./dist-newstyle/build/x86_64-linux/ghc-8.11.0.20191220/MyPrelude-0.1.0.0/build/autogen/Paths_MyPrelude.hs	39
+getBinDir	./dist-newstyle/build/x86_64-linux/ghc-8.11.0.20191220/dio-0.0.0/build/autogen/Paths_dio.hs	39
 getBounds	/home/blackcap/.cabal/packages/hackage.haskell.org/array/0.5.2.0/array-0.5.2.0/Data/Array/Base.hs	801
 getBounds	/home/blackcap/.cabal/packages/hackage.haskell.org/array/0.5.2.0/array-0.5.2.0/Data/Array/Base.hs	855
 getBounds	/home/blackcap/.cabal/packages/hackage.haskell.org/array/0.5.2.0/array-0.5.2.0/Data/Array/Base.hs	941
@@ -14165,7 +14213,13 @@ getCurrentCodePage	/home/blackcap/.cabal/packages/hackage.haskell.org/base/4.10.
 getCurrentDirectory	/home/blackcap/.cabal/packages/hackage.haskell.org/directory/1.3.1.5/directory-1.3.1.5/System/Directory/Internal/Common.hs	85
 getDataDir	./MyPrelude/dist-newstyle/build/x86_64-linux/ghc-8.11.0.20191220/MyPrelude-0.1.0.0/build/autogen/Paths_MyPrelude.hs	39
 getDataDir	./MyPrelude/dist-newstyle/build/x86_64-linux/ghc-8.11.0.20191220/MyPrelude-0.1.0.0/build/autogen/Paths_MyPrelude.hs	43
+getDataDir	./dist-newstyle/build/x86_64-linux/ghc-8.11.0.20191220/MyPrelude-0.1.0.0/build/autogen/Paths_MyPrelude.hs	39
+getDataDir	./dist-newstyle/build/x86_64-linux/ghc-8.11.0.20191220/MyPrelude-0.1.0.0/build/autogen/Paths_MyPrelude.hs	43
+getDataDir	./dist-newstyle/build/x86_64-linux/ghc-8.11.0.20191220/dio-0.0.0/build/autogen/Paths_dio.hs	39
+getDataDir	./dist-newstyle/build/x86_64-linux/ghc-8.11.0.20191220/dio-0.0.0/build/autogen/Paths_dio.hs	43
 getDataFileName	./MyPrelude/dist-newstyle/build/x86_64-linux/ghc-8.11.0.20191220/MyPrelude-0.1.0.0/build/autogen/Paths_MyPrelude.hs	47
+getDataFileName	./dist-newstyle/build/x86_64-linux/ghc-8.11.0.20191220/MyPrelude-0.1.0.0/build/autogen/Paths_MyPrelude.hs	47
+getDataFileName	./dist-newstyle/build/x86_64-linux/ghc-8.11.0.20191220/dio-0.0.0/build/autogen/Paths_dio.hs	47
 getDebugFlags	/home/blackcap/.cabal/packages/hackage.haskell.org/base/4.10.0.0/base-4.10.0.0/GHC/RTS/Flags.hsc	410
 getDelay	/home/blackcap/.cabal/packages/hackage.haskell.org/base/4.10.0.0/base-4.10.0.0/GHC/Conc/Windows.hs	310
 getDirectoryContents	/home/blackcap/.cabal/packages/hackage.haskell.org/directory/1.3.1.5/directory-1.3.1.5/System/Directory.hs	1255
@@ -14173,6 +14227,10 @@ getDual	/home/blackcap/.cabal/packages/hackage.haskell.org/base/4.10.0.0/base-4.
 getDual	/home/blackcap/.cabal/packages/hackage.haskell.org/semigroupoids/5.3.4/semigroupoids-5.3.4/src/Data/Semigroupoid/Dual.hs	23
 getDynLibDir	./MyPrelude/dist-newstyle/build/x86_64-linux/ghc-8.11.0.20191220/MyPrelude-0.1.0.0/build/autogen/Paths_MyPrelude.hs	39
 getDynLibDir	./MyPrelude/dist-newstyle/build/x86_64-linux/ghc-8.11.0.20191220/MyPrelude-0.1.0.0/build/autogen/Paths_MyPrelude.hs	42
+getDynLibDir	./dist-newstyle/build/x86_64-linux/ghc-8.11.0.20191220/MyPrelude-0.1.0.0/build/autogen/Paths_MyPrelude.hs	39
+getDynLibDir	./dist-newstyle/build/x86_64-linux/ghc-8.11.0.20191220/MyPrelude-0.1.0.0/build/autogen/Paths_MyPrelude.hs	42
+getDynLibDir	./dist-newstyle/build/x86_64-linux/ghc-8.11.0.20191220/dio-0.0.0/build/autogen/Paths_dio.hs	39
+getDynLibDir	./dist-newstyle/build/x86_64-linux/ghc-8.11.0.20191220/dio-0.0.0/build/autogen/Paths_dio.hs	42
 getEcho	/home/blackcap/.cabal/packages/hackage.haskell.org/base/4.10.0.0/base-4.10.0.0/GHC/IO/Device.hs	102
 getEcho	/home/blackcap/.cabal/packages/hackage.haskell.org/base/4.10.0.0/base-4.10.0.0/GHC/IO/FD.hs	113
 getEcho	/home/blackcap/.cabal/packages/hackage.haskell.org/base/4.10.0.0/base-4.10.0.0/GHC/IO/FD.hs	425
@@ -14231,6 +14289,7 @@ getGroupEntryForID	/home/blackcap/.cabal/packages/hackage.haskell.org/unix/2.7.2
 getGroupEntryForName	/home/blackcap/.cabal/packages/hackage.haskell.org/unix/2.7.2.2/unix-2.7.2.2/System/Posix/User.hsc	222
 getGroupProcessStatus	/home/blackcap/.cabal/packages/hackage.haskell.org/unix/2.7.2.2/unix-2.7.2.2/System/Posix/Process/Common.hsc	341
 getGroups	/home/blackcap/.cabal/packages/hackage.haskell.org/unix/2.7.2.2/unix-2.7.2.2/System/Posix/User.hsc	107
+getH	./src/Pogo.hs	33
 getHomeDirectory	/home/blackcap/.cabal/packages/hackage.haskell.org/directory/1.3.1.5/directory-1.3.1.5/System/Directory.hs	1744
 getIconName	/home/blackcap/.cabal/packages/hackage.haskell.org/X11/1.8/X11-1.8/Graphics/X11/Xlib/Misc.hsc	935
 getImage	/home/blackcap/.cabal/packages/hackage.haskell.org/X11/1.8/X11-1.8/Graphics/X11/Xlib/Image.hs	56
@@ -14241,8 +14300,16 @@ getLast	/home/blackcap/.cabal/packages/hackage.haskell.org/base/4.10.0.0/base-4.
 getLast	/home/blackcap/.cabal/packages/hackage.haskell.org/base/4.10.0.0/base-4.10.0.0/Data/Semigroup.hs	552
 getLibDir	./MyPrelude/dist-newstyle/build/x86_64-linux/ghc-8.11.0.20191220/MyPrelude-0.1.0.0/build/autogen/Paths_MyPrelude.hs	39
 getLibDir	./MyPrelude/dist-newstyle/build/x86_64-linux/ghc-8.11.0.20191220/MyPrelude-0.1.0.0/build/autogen/Paths_MyPrelude.hs	41
+getLibDir	./dist-newstyle/build/x86_64-linux/ghc-8.11.0.20191220/MyPrelude-0.1.0.0/build/autogen/Paths_MyPrelude.hs	39
+getLibDir	./dist-newstyle/build/x86_64-linux/ghc-8.11.0.20191220/MyPrelude-0.1.0.0/build/autogen/Paths_MyPrelude.hs	41
+getLibDir	./dist-newstyle/build/x86_64-linux/ghc-8.11.0.20191220/dio-0.0.0/build/autogen/Paths_dio.hs	39
+getLibDir	./dist-newstyle/build/x86_64-linux/ghc-8.11.0.20191220/dio-0.0.0/build/autogen/Paths_dio.hs	41
 getLibexecDir	./MyPrelude/dist-newstyle/build/x86_64-linux/ghc-8.11.0.20191220/MyPrelude-0.1.0.0/build/autogen/Paths_MyPrelude.hs	39
 getLibexecDir	./MyPrelude/dist-newstyle/build/x86_64-linux/ghc-8.11.0.20191220/MyPrelude-0.1.0.0/build/autogen/Paths_MyPrelude.hs	44
+getLibexecDir	./dist-newstyle/build/x86_64-linux/ghc-8.11.0.20191220/MyPrelude-0.1.0.0/build/autogen/Paths_MyPrelude.hs	39
+getLibexecDir	./dist-newstyle/build/x86_64-linux/ghc-8.11.0.20191220/MyPrelude-0.1.0.0/build/autogen/Paths_MyPrelude.hs	44
+getLibexecDir	./dist-newstyle/build/x86_64-linux/ghc-8.11.0.20191220/dio-0.0.0/build/autogen/Paths_dio.hs	39
+getLibexecDir	./dist-newstyle/build/x86_64-linux/ghc-8.11.0.20191220/dio-0.0.0/build/autogen/Paths_dio.hs	44
 getLine	/home/blackcap/.cabal/packages/hackage.haskell.org/base/4.10.0.0/base-4.10.0.0/System/IO.hs	293
 getLine	/home/blackcap/.cabal/packages/hackage.haskell.org/bytestring/0.10.8.2/bytestring-0.10.8.2/Data/ByteString.hs	1595
 getLine	/home/blackcap/.cabal/packages/hackage.haskell.org/text/1.2.4.0/text-1.2.4.0/Data/Text/IO.hs	307
@@ -14373,10 +14440,15 @@ getSymbolicLinkTarget	/home/blackcap/.cabal/packages/hackage.haskell.org/directo
 getSysVar	/home/blackcap/.cabal/packages/hackage.haskell.org/unix/2.7.2.2/unix-2.7.2.2/System/Posix/Unistd.hsc	201
 getSysconfDir	./MyPrelude/dist-newstyle/build/x86_64-linux/ghc-8.11.0.20191220/MyPrelude-0.1.0.0/build/autogen/Paths_MyPrelude.hs	39
 getSysconfDir	./MyPrelude/dist-newstyle/build/x86_64-linux/ghc-8.11.0.20191220/MyPrelude-0.1.0.0/build/autogen/Paths_MyPrelude.hs	45
+getSysconfDir	./dist-newstyle/build/x86_64-linux/ghc-8.11.0.20191220/MyPrelude-0.1.0.0/build/autogen/Paths_MyPrelude.hs	39
+getSysconfDir	./dist-newstyle/build/x86_64-linux/ghc-8.11.0.20191220/MyPrelude-0.1.0.0/build/autogen/Paths_MyPrelude.hs	45
+getSysconfDir	./dist-newstyle/build/x86_64-linux/ghc-8.11.0.20191220/dio-0.0.0/build/autogen/Paths_dio.hs	39
+getSysconfDir	./dist-newstyle/build/x86_64-linux/ghc-8.11.0.20191220/dio-0.0.0/build/autogen/Paths_dio.hs	45
 getSystemEventManager	/home/blackcap/.cabal/packages/hackage.haskell.org/base/4.10.0.0/base-4.10.0.0/GHC/Event/Thread.hs	173
 getSystemEventManager_	/home/blackcap/.cabal/packages/hackage.haskell.org/base/4.10.0.0/base-4.10.0.0/GHC/Event/Thread.hs	181
 getSystemID	/home/blackcap/.cabal/packages/hackage.haskell.org/unix/2.7.2.2/unix-2.7.2.2/System/Posix/Unistd.hsc	84
 getSystemTimerManager	/home/blackcap/.cabal/packages/hackage.haskell.org/base/4.10.0.0/base-4.10.0.0/GHC/Event/Thread.hs	214
+getT	./src/Pogo.hs	37
 getTag	/home/blackcap/.cabal/packages/hackage.haskell.org/base/4.10.0.0/base-4.10.0.0/GHC/Base.hs	1214
 getTemporaryDirectory	/home/blackcap/.cabal/packages/hackage.haskell.org/directory/1.3.1.5/directory-1.3.1.5/System/Directory.hs	1933
 getTerminalAttributes	/home/blackcap/.cabal/packages/hackage.haskell.org/unix/2.7.2.2/unix-2.7.2.2/System/Posix/Terminal/Common.hsc	374
@@ -14701,6 +14773,7 @@ haLastDecode	/home/blackcap/.cabal/packages/hackage.haskell.org/base/4.10.0.0/ba
 haOtherSide	/home/blackcap/.cabal/packages/hackage.haskell.org/base/4.10.0.0/base-4.10.0.0/GHC/IO/Handle/Types.hs	136
 haOutputNL	/home/blackcap/.cabal/packages/hackage.haskell.org/base/4.10.0.0/base-4.10.0.0/GHC/IO/Handle/Types.hs	135
 haType	/home/blackcap/.cabal/packages/hackage.haskell.org/base/4.10.0.0/base-4.10.0.0/GHC/IO/Handle/Types.hs	125
+halts	./src/Termination.hs	32
 handle	/home/blackcap/.cabal/packages/hackage.haskell.org/base/4.10.0.0/base-4.10.0.0/Control/Exception/Base.hs	142
 handle	/home/blackcap/.cabal/packages/hackage.haskell.org/extensible-exceptions/0.1.1.4/extensible-exceptions-0.1.1.4/Control/Exception/Extensible.hs	334
 handle	/home/blackcap/.cabal/packages/hackage.haskell.org/xmonad/0.13/xmonad-0.13/src/XMonad/Layout.hs	155
@@ -15675,6 +15748,7 @@ isWriteBuffer	/home/blackcap/.cabal/packages/hackage.haskell.org/base/4.10.0.0/b
 isn'tBottom	/home/blackcap/.cabal/packages/hackage.haskell.org/containers/0.5.10.2/containers-0.5.10.2/tests/intset-strictness.hs	42
 isntcomment	/home/blackcap/.cabal/packages/hackage.haskell.org/xmonad/0.13/xmonad-0.13/tests/loc.hs	12
 iso8601DateFormat	/home/blackcap/.cabal/packages/hackage.haskell.org/old-locale/1.0.0.7/old-locale-1.0.0.7/System/Locale.hs	90
+isoPogoLin	./src/Pogo.hs	46
 isolateWorkingDirectory	/home/blackcap/.cabal/packages/hackage.haskell.org/directory/1.3.1.5/directory-1.3.1.5/tests/Util.hs	144
 isolatedRun	/home/blackcap/.cabal/packages/hackage.haskell.org/directory/1.3.1.5/directory-1.3.1.5/tests/Util.hs	162
 isqrt	./MyPrelude/src/BTree.hs	309
@@ -15750,6 +15824,7 @@ kqueueFd	/home/blackcap/.cabal/packages/hackage.haskell.org/base/4.10.0.0/base-4
 kqueueWait	/home/blackcap/.cabal/packages/hackage.haskell.org/base/4.10.0.0/base-4.10.0.0/GHC/Event/KQueue.hsc	240
 kqueueWaitNonBlock	/home/blackcap/.cabal/packages/hackage.haskell.org/base/4.10.0.0/base-4.10.0.0/GHC/Event/KQueue.hsc	245
 l	./MyPrelude/src/Stack.hs	99
+l	./src/Pogo.hs	20
 l	/home/blackcap/.cabal/packages/hackage.haskell.org/base/4.10.0.0/base-4.10.0.0/GHC/Base.hs	775
 labelThread	/home/blackcap/.cabal/packages/hackage.haskell.org/base/4.10.0.0/base-4.10.0.0/GHC/Conc/Sync.hs	508
 largeAllocLim	/home/blackcap/.cabal/packages/hackage.haskell.org/base/4.10.0.0/base-4.10.0.0/GHC/RTS/Flags.hsc	98
@@ -15840,6 +15915,7 @@ leWord64	/home/blackcap/.cabal/packages/hackage.haskell.org/base/4.10.0.0/base-4
 leWord8	/home/blackcap/.cabal/packages/hackage.haskell.org/base/4.10.0.0/base-4.10.0.0/GHC/Word.hs	91
 leWord8	/home/blackcap/.cabal/packages/hackage.haskell.org/base/4.10.0.0/base-4.10.0.0/GHC/Word.hs	95
 leadByte	/home/blackcap/.cabal/packages/hackage.haskell.org/base/4.10.0.0/base-4.10.0.0/GHC/IO/Encoding/CodePage/API.hs	64
+left	./src/ListZipper.hs	20
 left	/home/blackcap/.cabal/packages/hackage.haskell.org/base/4.10.0.0/base-4.10.0.0/Control/Arrow.hs	228
 left	/home/blackcap/.cabal/packages/hackage.haskell.org/base/4.10.0.0/base-4.10.0.0/Control/Arrow.hs	279
 left	/home/blackcap/.cabal/packages/hackage.haskell.org/base/4.10.0.0/base-4.10.0.0/Control/Arrow.hs	286
@@ -15933,8 +16009,16 @@ lexSymbol	/home/blackcap/.cabal/packages/hackage.haskell.org/base/4.10.0.0/base-
 lexToken	/home/blackcap/.cabal/packages/hackage.haskell.org/base/4.10.0.0/base-4.10.0.0/Text/Read/Lex.hs	180
 libdir	./MyPrelude/dist-newstyle/build/x86_64-linux/ghc-8.11.0.20191220/MyPrelude-0.1.0.0/build/autogen/Paths_MyPrelude.hs	30
 libdir	./MyPrelude/dist-newstyle/build/x86_64-linux/ghc-8.11.0.20191220/MyPrelude-0.1.0.0/build/autogen/Paths_MyPrelude.hs	33
+libdir	./dist-newstyle/build/x86_64-linux/ghc-8.11.0.20191220/MyPrelude-0.1.0.0/build/autogen/Paths_MyPrelude.hs	30
+libdir	./dist-newstyle/build/x86_64-linux/ghc-8.11.0.20191220/MyPrelude-0.1.0.0/build/autogen/Paths_MyPrelude.hs	33
+libdir	./dist-newstyle/build/x86_64-linux/ghc-8.11.0.20191220/dio-0.0.0/build/autogen/Paths_dio.hs	30
+libdir	./dist-newstyle/build/x86_64-linux/ghc-8.11.0.20191220/dio-0.0.0/build/autogen/Paths_dio.hs	33
 libexecdir	./MyPrelude/dist-newstyle/build/x86_64-linux/ghc-8.11.0.20191220/MyPrelude-0.1.0.0/build/autogen/Paths_MyPrelude.hs	30
 libexecdir	./MyPrelude/dist-newstyle/build/x86_64-linux/ghc-8.11.0.20191220/MyPrelude-0.1.0.0/build/autogen/Paths_MyPrelude.hs	36
+libexecdir	./dist-newstyle/build/x86_64-linux/ghc-8.11.0.20191220/MyPrelude-0.1.0.0/build/autogen/Paths_MyPrelude.hs	30
+libexecdir	./dist-newstyle/build/x86_64-linux/ghc-8.11.0.20191220/MyPrelude-0.1.0.0/build/autogen/Paths_MyPrelude.hs	36
+libexecdir	./dist-newstyle/build/x86_64-linux/ghc-8.11.0.20191220/dio-0.0.0/build/autogen/Paths_dio.hs	30
+libexecdir	./dist-newstyle/build/x86_64-linux/ghc-8.11.0.20191220/dio-0.0.0/build/autogen/Paths_dio.hs	36
 lift	/home/blackcap/.cabal/packages/hackage.haskell.org/base/4.10.0.0/base-4.10.0.0/Data/List/NonEmpty.hs	280
 lift	/home/blackcap/.cabal/packages/hackage.haskell.org/base/4.10.0.0/base-4.10.0.0/Text/ParserCombinators/ReadPrec.hs	112
 lift	/home/blackcap/.cabal/packages/hackage.haskell.org/tardis/0.4.1.0/tardis-0.4.1.0/Control/Monad/Trans/Tardis.hs	137
@@ -16682,6 +16766,7 @@ lowestBitSet	/home/blackcap/.cabal/packages/hackage.haskell.org/containers/0.5.1
 lowestBitSet	/home/blackcap/.cabal/packages/hackage.haskell.org/containers/0.6.2.1/containers-0.6.2.1/src/Data/IntSet/Internal.hs	1365
 lowestBitSet	/home/blackcap/.cabal/packages/hackage.haskell.org/containers/0.6.2.1/containers-0.6.2.1/src/Data/IntSet/Internal.hs	1435
 lowestBitSet	/home/blackcap/.cabal/packages/hackage.haskell.org/containers/0.6.2.1/containers-0.6.2.1/src/Data/IntSet/Internal.hs	1473
+ls	./src/ListZipper.hs	13
 lsingleLeft	/home/blackcap/.cabal/packages/hackage.haskell.org/base/4.10.0.0/base-4.10.0.0/GHC/Event/PSQ.hs	367
 lsingleRight	/home/blackcap/.cabal/packages/hackage.haskell.org/base/4.10.0.0/base-4.10.0.0/GHC/Event/PSQ.hs	382
 lspOptions	/home/blackcap/.cabal/packages/hackage.haskell.org/haskell-lsp-types/0.21.0.0/haskell-lsp-types-0.21.0.0/src/Language/Haskell/LSP/Types/Constants.hs	9
@@ -17879,6 +17964,7 @@ modificationTimeFromMetadata	/home/blackcap/.cabal/packages/hackage.haskell.org/
 modificationTimeFromMetadata	/home/blackcap/.cabal/packages/hackage.haskell.org/directory/1.3.1.5/directory-1.3.1.5/System/Directory/Internal/Windows.hsc	464
 modificationTimeHiRes	/home/blackcap/.cabal/packages/hackage.haskell.org/unix/2.7.2.2/unix-2.7.2.2/System/Posix/Files/Common.hsc	260
 modificationTimeHiRes	/home/blackcap/.cabal/packages/hackage.haskell.org/unix/2.7.2.2/unix-2.7.2.2/System/Posix/Files/Common.hsc	312
+modify	./src/ListZipper.hs	10
 modify	/home/blackcap/.cabal/packages/hackage.haskell.org/mtl/2.2.1/mtl-2.2.1/Control/Monad/State/Class.hs	84
 modify	/home/blackcap/.cabal/packages/hackage.haskell.org/mtl/2.2.2/mtl-2.2.2/Control/Monad/State/Class.hs	87
 modify	/home/blackcap/.cabal/packages/hackage.haskell.org/transformers/0.5.6.2/transformers-0.5.6.2/Control/Monad/Trans/RWS/CPS.hs	375
@@ -21517,6 +21603,7 @@ rewindDirStream	/home/blackcap/.cabal/packages/hackage.haskell.org/unix/2.7.2.2/
 rewindIt	/home/blackcap/.cabal/packages/hackage.haskell.org/trifecta/2.1/trifecta-2.1/src/Text/Trifecta/Util/It.hs	254
 reworkFd	/home/blackcap/.cabal/packages/hackage.haskell.org/base/4.10.0.0/base-4.10.0.0/GHC/Event/Poll.hsc	67
 rfc822DateFormat	/home/blackcap/.cabal/packages/hackage.haskell.org/old-locale/1.0.0.7/old-locale-1.0.0.7/System/Locale.hs	97
+right	./src/ListZipper.hs	16
 right	/home/blackcap/.cabal/packages/hackage.haskell.org/base/4.10.0.0/base-4.10.0.0/Control/Arrow.hs	235
 right	/home/blackcap/.cabal/packages/hackage.haskell.org/base/4.10.0.0/base-4.10.0.0/Control/Arrow.hs	280
 right	/home/blackcap/.cabal/packages/hackage.haskell.org/base/4.10.0.0/base-4.10.0.0/Control/Arrow.hs	287
@@ -21629,6 +21716,7 @@ roundFloatInt	/home/blackcap/.cabal/packages/hackage.haskell.org/base/4.10.0.0/b
 roundFloatInteger	/home/blackcap/.cabal/packages/hackage.haskell.org/base/4.10.0.0/base-4.10.0.0/GHC/Float/RealFracMethods.hs	181
 roundTo	/home/blackcap/.cabal/packages/hackage.haskell.org/base/4.10.0.0/base-4.10.0.0/GHC/Float.hs	720
 roundTo	/home/blackcap/.cabal/packages/hackage.haskell.org/text/1.2.4.0/text-1.2.4.0/Data/Text/Internal/Builder/RealFloat/Functions.hs	17
+roundtrip	./src/Pogo.hs	29
 rsingleLeft	/home/blackcap/.cabal/packages/hackage.haskell.org/base/4.10.0.0/base-4.10.0.0/GHC/Event/PSQ.hs	375
 rsingleRight	/home/blackcap/.cabal/packages/hackage.haskell.org/base/4.10.0.0/base-4.10.0.0/GHC/Event/PSQ.hs	389
 rules	/home/blackcap/.cabal/packages/hackage.haskell.org/bytestring/0.10.8.2/bytestring-0.10.8.2/tests/Rules.hs	33
@@ -21659,6 +21747,8 @@ runExcept	/home/blackcap/.cabal/packages/hackage.haskell.org/transformers/0.5.6.
 runExceptT	/home/blackcap/.cabal/packages/hackage.haskell.org/transformers/0.5.6.2/transformers-0.5.6.2/Control/Monad/Trans/Except.hs	154
 runF	/home/blackcap/.cabal/packages/hackage.haskell.org/bytestring/0.10.8.2/bytestring-0.10.8.2/Data/ByteString/Builder/Prim/Internal.hs	162
 runFinalizerBatch	/home/blackcap/.cabal/packages/hackage.haskell.org/base/4.10.0.0/base-4.10.0.0/GHC/Weak.hs	144
+runFuck	./src/Fucktoid.hs	22
+runFuck'	./src/Fucktoid.hs	33
 runGenProcess_	/home/blackcap/.cabal/packages/hackage.haskell.org/process/1.6.2.0/process-1.6.2.0/System/Process/Internals.hs	180
 runHandlers	/home/blackcap/.cabal/packages/hackage.haskell.org/base/4.10.0.0/base-4.10.0.0/GHC/Conc/Signal.hs	63
 runHandlersPtr	/home/blackcap/.cabal/packages/hackage.haskell.org/base/4.10.0.0/base-4.10.0.0/GHC/Conc/Signal.hs	77
@@ -21691,6 +21781,7 @@ runLayout	/home/blackcap/.cabal/packages/hackage.haskell.org/xmonad/0.13/xmonad-
 runLayout	/home/blackcap/.cabal/packages/hackage.haskell.org/xmonad/0.13/xmonad-0.13/src/XMonad/Core.hs	332
 runLayout	/home/blackcap/.cabal/packages/hackage.haskell.org/xmonad/0.13/xmonad-0.13/src/XMonad/Layout.hs	121
 runLayout	/home/blackcap/.cabal/packages/hackage.haskell.org/xmonad/0.13/xmonad-0.13/src/XMonad/Layout.hs	175
+runLinear	./src/Linear.hs	30
 runListT	/home/blackcap/.cabal/packages/hackage.haskell.org/transformers/0.5.6.2/transformers-0.5.6.2/Control/Monad/Trans/List.hs	56
 runMagic	/home/blackcap/.cabal/packages/hackage.haskell.org/semigroupoids/5.3.4/semigroupoids-5.3.4/src/Data/Functor/Alt.hs	143
 runMainIO	/home/blackcap/.cabal/packages/hackage.haskell.org/base/4.10.0.0/base-4.10.0.0/GHC/TopHandler.hs	81
@@ -22945,6 +23036,8 @@ snocTree'	/home/blackcap/.cabal/packages/hackage.haskell.org/containers/0.6.2.1/
 socketMode	/home/blackcap/.cabal/packages/hackage.haskell.org/unix/2.7.2.2/unix-2.7.2.2/System/Posix/Files/Common.hsc	204
 softwareStop	/home/blackcap/.cabal/packages/hackage.haskell.org/unix/2.7.2.2/unix-2.7.2.2/System/Posix/Signals.hsc	219
 softwareTermination	/home/blackcap/.cabal/packages/hackage.haskell.org/unix/2.7.2.2/unix-2.7.2.2/System/Posix/Signals.hsc	222
+solveLinear	./src/Linear.hs	19
+solvePogo	./src/Pogo.hs	52
 some	/home/blackcap/.cabal/packages/hackage.haskell.org/base/4.10.0.0/base-4.10.0.0/GHC/Base.hs	757
 some	/home/blackcap/.cabal/packages/hackage.haskell.org/semigroupoids/5.3.4/semigroupoids-5.3.4/src/Data/Functor/Alt.hs	126
 some	/home/blackcap/.cabal/packages/hackage.haskell.org/semigroupoids/5.3.4/semigroupoids-5.3.4/src/Data/Functor/Alt.hs	147
@@ -23521,6 +23614,10 @@ sysconf	/home/blackcap/.cabal/packages/hackage.haskell.org/unix/2.7.2.2/unix-2.7
 sysconfWithDefault	/home/blackcap/.cabal/packages/hackage.haskell.org/unix/2.7.2.2/unix-2.7.2.2/System/Posix/User.hsc	409
 sysconfdir	./MyPrelude/dist-newstyle/build/x86_64-linux/ghc-8.11.0.20191220/MyPrelude-0.1.0.0/build/autogen/Paths_MyPrelude.hs	30
 sysconfdir	./MyPrelude/dist-newstyle/build/x86_64-linux/ghc-8.11.0.20191220/MyPrelude-0.1.0.0/build/autogen/Paths_MyPrelude.hs	37
+sysconfdir	./dist-newstyle/build/x86_64-linux/ghc-8.11.0.20191220/MyPrelude-0.1.0.0/build/autogen/Paths_MyPrelude.hs	30
+sysconfdir	./dist-newstyle/build/x86_64-linux/ghc-8.11.0.20191220/MyPrelude-0.1.0.0/build/autogen/Paths_MyPrelude.hs	37
+sysconfdir	./dist-newstyle/build/x86_64-linux/ghc-8.11.0.20191220/dio-0.0.0/build/autogen/Paths_dio.hs	30
+sysconfdir	./dist-newstyle/build/x86_64-linux/ghc-8.11.0.20191220/dio-0.0.0/build/autogen/Paths_dio.hs	37
 system	/home/blackcap/.cabal/packages/hackage.haskell.org/process/1.6.2.0/process-1.6.2.0/System/Process.hs	896
 systemName	/home/blackcap/.cabal/packages/hackage.haskell.org/unix/2.7.2.2/unix-2.7.2.2/System/Posix/Unistd.hsc	77
 systemTime	/home/blackcap/.cabal/packages/hackage.haskell.org/unix/2.7.2.2/unix-2.7.2.2/System/Posix/Process/Common.hsc	184
@@ -23926,6 +24023,7 @@ tell	/home/blackcap/.cabal/packages/hackage.haskell.org/transformers/0.5.6.2/tra
 tell	/home/blackcap/.cabal/packages/hackage.haskell.org/transformers/0.5.6.2/transformers-0.5.6.2/Control/Monad/Trans/Writer/Strict.hs	255
 tellDirStream	/home/blackcap/.cabal/packages/hackage.haskell.org/unix/2.7.2.2/unix-2.7.2.2/System/Posix/Directory/Common.hsc	74
 tempCounter	/home/blackcap/.cabal/packages/hackage.haskell.org/base/4.10.0.0/base-4.10.0.0/System/IO.hs	517
+termToPogo	./src/Termination.hs	46
 terminal	/home/blackcap/.cabal/packages/hackage.haskell.org/xmonad/0.13/xmonad-0.13/src/XMonad/Config.hs	168
 terminal	/home/blackcap/.cabal/packages/hackage.haskell.org/xmonad/0.13/xmonad-0.13/src/XMonad/Core.hs	101
 terminalMode	/home/blackcap/.cabal/packages/hackage.haskell.org/unix/2.7.2.2/unix-2.7.2.2/System/Posix/Terminal/Common.hsc	202
@@ -26041,6 +26139,8 @@ value	/home/blackcap/.cabal/packages/hackage.haskell.org/base/4.10.0.0/base-4.10
 vecCountTypeRep	/home/blackcap/.cabal/packages/hackage.haskell.org/base/4.10.0.0/base-4.10.0.0/Data/Typeable/Internal.hs	420
 vecElemTypeRep	/home/blackcap/.cabal/packages/hackage.haskell.org/base/4.10.0.0/base-4.10.0.0/Data/Typeable/Internal.hs	433
 version	./MyPrelude/dist-newstyle/build/x86_64-linux/ghc-8.11.0.20191220/MyPrelude-0.1.0.0/build/autogen/Paths_MyPrelude.hs	28
+version	./dist-newstyle/build/x86_64-linux/ghc-8.11.0.20191220/MyPrelude-0.1.0.0/build/autogen/Paths_MyPrelude.hs	28
+version	./dist-newstyle/build/x86_64-linux/ghc-8.11.0.20191220/dio-0.0.0/build/autogen/Paths_dio.hs	28
 version	/home/blackcap/.cabal/packages/hackage.haskell.org/unix/2.7.2.2/unix-2.7.2.2/System/Posix/Unistd.hsc	80
 versionBranch	/home/blackcap/.cabal/packages/hackage.haskell.org/base/4.10.0.0/base-4.10.0.0/Data/Version.hs	78
 versionTags	/home/blackcap/.cabal/packages/hackage.haskell.org/base/4.10.0.0/base-4.10.0.0/Data/Version.hs	92
