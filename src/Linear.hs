@@ -18,7 +18,7 @@ type Solution n
 
 solveLinear :: _ => Linear n -> Solution n
 solveLinear Lin {..}
-  = [ \k -> (x + k*v, y - k*u) | q == 0 ]
+  = [ \k -> (x + k*v, y - k*u) | b /= 0, q == 0 ]
   where
     (d, e) = gcdExt a b
     (h, q) = divMod c d

@@ -5,6 +5,7 @@
 module Fucktoid where
 
 import Data.Semigroup
+import Control.Monad.Loops (iterateUntilM)
 
 import ListZipper
 import Pogo
@@ -90,4 +91,12 @@ ppTape =
     reverse ls <> ('[' : x : "]") <> rs
 
 pp = putStrLn . ppTape
+
+trace p@(pogoOp->Jnz x) =
+  case solvePogo p of
+    Nothing -> putStrLn "<<loop>>"
+    Just h  -> pp =<< iterateUntilM copoint f e
+  where
+    e   = blankTape (c p)
+    f a = runFuck a x <$ pp a
 

@@ -40,16 +40,6 @@ getT Pogo {..} h =
 roundtrip Pogo {..} =
   div c $ gcd c l
 
-
--- Solve for H
-solvePogo Pogo {..}
-  | g == 1       = Just $ mod x c
-  | mod d g /= 0 = Nothing
-  | otherwise    = solvePogo $ Pogo (div c g) (div l g) (div d g)
-  where
-    (g,h) = gcdExt l c
-    x     = d*h + c*div (d*h) (-c)
-
 -- Pogo is isomorphic to Linear
 --
 -- Linear: ax + by = c
@@ -59,6 +49,11 @@ isoPogoLin :: Pogo n <-> Linear n
 isoPogoLin =
   Iso do \Pogo {l=a, c=b, d=c} -> Lin  {..}
       do \Lin  {a=l, b=c, c=d} -> Pogo {..}
+
+-- Solve for H
+solvePogo p@Pogo{..}
+  = map (\(h,_) -> mod h c)
+  $ runLinear (pro isoPogoLin p) 0
 
 
 -- When will we first land on the
@@ -116,6 +111,9 @@ countCell p@Pogo {..} i t
 -- The loop diverges iff False
 halts =
   isJust . solvePogo
+
+diverges =
+  isNothing . solvePogo
 
 -- The state of cell I at time T
 -- assuming it was False initially

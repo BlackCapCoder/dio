@@ -9,6 +9,7 @@ dependencies:
 - arithmoi
 - integer-roots
 - semirings
+- monad-loops
 tests:
   full:
     main:                Main.hs
