@@ -25,7 +25,6 @@ main = microspec do
     "pogoOp . opPogo = id" ∴
       pending
 
-
 testIso iso = do
   "con . pro = id" ∴ con iso . pro iso =*= id
   "pro . con = id" ∴ pro iso . con iso =*= id
