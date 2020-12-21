@@ -8,8 +8,6 @@ import Algebra.Heyting
 import Data.Group
 
 
-type D = Divisibility
-
 newtype Divisibility a = Divisibility { undiv :: a }
   deriving stock
     ( Show
@@ -23,7 +21,7 @@ newtype Divisibility a = Divisibility { undiv :: a }
     via WrappedSet (Divisibility a)
 
 
-divide' :: ∀ a. GcdDomain a => D a -> D a -> Maybe (D a)
+divide' :: ∀ a d. (GcdDomain a, d ~ Divisibility a) => d -> d -> Maybe d
 divide' = coerce do divide @a
 
 instance GcdDomain a => Set (Divisibility a)
