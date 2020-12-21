@@ -42,5 +42,15 @@ instance GcdDomain a => Set (Divisibility a)
       | isTop a = isTop b -- avoid division by zero
       | let     = isJust $ divide' b a
 
+    -- This is incorrect.
+    --
+    -- The problem is that we consider 0 to "contain everything",
+    -- which is fine until we have to remove something from it
+    -- and produce a value that contains everything except X.
+    --
+    -- We could use the negative numbers for this at the cost
+    -- of another constraint?
+    --
     diff a b =
       fromMaybe bot $ divide' a (a ∩ b)
+
