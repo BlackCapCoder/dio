@@ -41,7 +41,7 @@ class Set s
   complement :: s -> s
 
   subeq a b = (a ∪ b) ≡ b
-  equal a b = (a ⊆ b) ∨ (b ⊆ a)
+  equal a b = (a ⊆ b) ∧ (b ⊆ a)
 
   isTop = subeq top
   isBot = join disjoint
@@ -99,8 +99,8 @@ instance Set a => Heyting (WrappedSet a) where
   neg     = complement
   x ==> y = neg x ∪ y
 
-instance Set a => Ord (WrappedSet a) where
-  a <= b = isTop $ a ==> b
+-- instance Set a => Ord (WrappedSet a) where
+--   a <= b = isTop $ a ==> b
 
 instance Set a => Semigroup  (WrappedSet a) where (<>)   = (∪)
 instance Set a => Monoid     (WrappedSet a) where mempty = bot
@@ -126,38 +126,38 @@ instance Set a => RightReductive (WrappedSet a) where
   stripSuffix a b = b </> a
 
 instance Set a => Reductive (WrappedSet a) where
-  (</>) = divide
+  (</>) a b = (a ∖ b) <$ guard (b ⊆ a)
 
 instance Set a => OverlappingGCDMonoid (WrappedSet a) where
   stripOverlap a b = (a ∖ b, a ∩ b, b ∖ a)
 
-instance Set a => Semiring (WrappedSet a) where
-  zero  = bot
-  one   = top
-  plus  = (∪)
-  times = (∩)
-
-instance Set a => Ring (WrappedSet a) where
-  negate = neg
-
-instance Set a => GcdDomain (WrappedSet a) where
-  gcd        = (∩)
-  lcm        = (∪)
-  coprime    = disjoint
-  divide a b = (a ∖ b) <$ guard (b ⊆ a)
-
-instance Set a => Euclidean (WrappedSet a) where
-  quot   = diff
-  rem    = uniq
-  degree = isoSemi
-
-isoSemi :: (Ord a, Semiring a, Semiring b) => a -> b
-isoSemi a
-  | isZero a  = zero
-  | otherwise = go zero (one, one)
-  where
-    go r (b, n)
-      | a >= b+b+r = go r (b+b, n+n)
-      | a == b+r   = n
-      | otherwise  = go (r+b) (one, one) + n
+-- instance Set a => Semiring (WrappedSet a) where
+--   zero  = bot
+--   one   = top
+--   plus  = (∪)
+--   times = (∩)
+--
+-- instance Set a => Ring (WrappedSet a) where
+--   negate = neg
+--
+-- instance Set a => GcdDomain (WrappedSet a) where
+--   gcd        = (∩)
+--   lcm        = (∪)
+--   coprime    = disjoint
+--   divide a b = (a ∖ b) <$ guard (b ⊆ a)
+--
+-- instance Set a => Euclidean (WrappedSet a) where
+--   quot   = diff
+--   rem    = uniq
+--   degree = isoSemi
+--
+-- isoSemi :: (Ord a, Semiring a, Semiring b) => a -> b
+-- isoSemi a
+--   | isZero a  = zero
+--   | otherwise = go zero (one, one)
+--   where
+--     go r (b, n)
+--       | a >= b+b+r = go r (b+b, n+n)
+--       | a == b+r   = n
+--       | otherwise  = go (r+b) (one, one) + n
 

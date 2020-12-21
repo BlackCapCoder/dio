@@ -6,6 +6,11 @@ import Pogo
 import Fucktoid
 import Linear hiding (a,b,c)
 
+import Algebra.Heyting as L
+import Algebra.Lattice as L
+import Algebra.Divisibility (Divisibility (..))
+import Algebra.Divisibility qualified as D
+
 
 main = microspec do
 
@@ -25,6 +30,9 @@ main = microspec do
     "pogoOp . opPogo = id" ∴
       pending
 
+  "Divisibility is heyting" ∴
+    heytingLaws @DI
+
 testIso iso = do
   "con . pro = id" ∴ con iso . pro iso =*= id
   "pro . con = id" ∴ pro iso . con iso =*= id
@@ -43,6 +51,23 @@ testSolvePogo = do
 
   where
     p =: r = it (show p) $ solvePogo p === r
+
+
+-- https://en.wikipedia.org/wiki/Heyting_algebra
+heytingLaws :: ∀ h. (Heyting h, Arbitrary h, Show h, Eq h) => Microspec ()
+heytingLaws = do
+
+  "law 1" ∴ \(a :: h) ->
+    (a L.==> a) === L.top
+
+  "law 2" ∴ \(a :: h) b ->
+    a /\ (a L.==> b) === a /\ b
+
+  "law 3" ∴ \(a :: h) b ->
+    b /\ (a L.==> b) === b
+
+  "law 4" ∴ \(a :: h) b c ->
+    a L.==> (b /\ c) === (a L.==> b) /\ (a L.==> c)
 
 
 ----
@@ -68,4 +93,10 @@ instance Arbitrary a => Arbitrary (Pogo a) where
 
 instance Arbitrary a => Arbitrary (Linear a) where
   arbitrary = con linTup <$> arbitrary
+
+
+type DI = Divisibility Integer
+
+instance Arbitrary DI where
+  arbitrary = D.Div' <$> arbitrary
 
