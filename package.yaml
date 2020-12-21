@@ -17,6 +17,8 @@ dependencies:
 - comonad
 - algebraic-graphs
 - IntervalMap
+- mono-traversable
+# - data-ordlist
 tests:
   full:
     main:                Main.hs

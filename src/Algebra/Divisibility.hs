@@ -1,5 +1,22 @@
+{-# OPTIONS_GHC -Wno-partial-type-signatures #-}
+{-# LANGUAGE UndecidableInstances #-}
 module Algebra.Divisibility
+  ( Divisibility (..)
+
+  , pattern Div
+  , pattern Div'
+  , divisibility,   divisibility'
+  , unDivisibility, unDivisibility'
+
+  , singleton
+  , insert
+  , delete
+  , member
+  , toList
+  )
   where
+
+import Prelude hiding (toList)
 
 import Algebra.Set
 import Algebra.Lattice hiding (top)
@@ -8,6 +25,10 @@ import Algebra.Heyting
 import Data.Group
 import Data.Semiring
 import Math.NumberTheory.Primes
+
+import Data.DistinctFactors
+import Data.MonoTraversable
+import Data.Containers qualified as M
 
 
 data Divisibility a = Neg a | Zero | One | Pos a
@@ -24,59 +45,7 @@ data Divisibility a = Neg a | Zero | One | Pos a
     )
     via WrappedSet (Divisibility a)
 
-
-unDiv = \case
-  Zero  -> zero
-  One   -> one
-  Pos a -> a
-  Neg a -> undefined -- product of every number except 'a'
-
-pattern Div :: GcdDomain a => a -> Divisibility a
-pattern Div a <- (unDiv->a)
-  where Div a = safePos a
-
------
-
-toDiv' = \case
-  0 -> Zero
-  1 -> One
-  (-1) -> Zero
-  n | n > 0 -> Pos (f n)
-    | let   -> Neg (f $ abs n)
-  where
-    f = factorBack . fmap (fmap $ const 1) . factorise
-
-unDiv' = \case
-  Zero  -> 0
-  One   -> 1
-  Pos a -> a
-  Neg a -> -a
-
-pattern Div' :: (Ord a, Num a, UniqueFactorisation a) => a -> Divisibility a
-pattern Div' a <- (unDiv'->a)
-  where Div' a = toDiv' a
-
------
-
-isOne'  = join coprime
-isZero' = isOne' . plus one
-
-safeNeg a
-  | isOne' a = Zero
-  | let      = Neg a
-
-safePos a
-  | isOne' a = One
-  | let      = Pos a
-
-diff' a b =
-  fromMaybe one $ divide a (gcd a b)
-
-subeq' a b =
-  isJust $ divide b a
-
------
-
+----
 
 instance GcdDomain a => Set (Divisibility a)
   where
@@ -149,4 +118,160 @@ instance GcdDomain a => Set (Divisibility a)
     (Pos a, Neg b) -> coprime a b
     (Neg a, Pos b) -> False -- yes?
 
+----
+
+-- Remove prime factors that appear more than once
+uniqueFactors =
+  getDistinct . distinct
+
+divisibility n
+  | isZero' n = Zero
+  | isOne'  n = One
+  | let       = Pos $ uniqueFactors n
+
+unDivisibility = \case
+  Zero  -> zero
+  One   -> one
+  Pos a -> a
+  Neg a -> undefined -- product of every prime / a
+
+pattern Div :: (GcdDomain a, UniqueFactorisation a) => a -> Divisibility a
+pattern Div a <- (unDivisibility->a)
+  where Div a = divisibility a
+
+-----
+
+divisibility' = \case
+  0    -> Zero
+  (-1) -> Zero
+  1    -> One
+  n | n > 0 -> Pos (uniqueFactors n)
+    | let   -> Neg (uniqueFactors $ abs n)
+
+unDivisibility' = \case
+  Zero  -> 0
+  One   -> 1
+  Pos a -> a
+  Neg a -> -a
+
+pattern Div' :: (Ord a, Num a, UniqueFactorisation a) => a -> Divisibility a
+pattern Div' a <- (unDivisibility'->a)
+  where Div' a = divisibility' a
+
+-----
+
+isOne'  = join coprime
+isZero' = isOne' . plus one
+
+safeNeg a
+  | isOne' a = Zero
+  | let      = Neg a
+
+safePos a
+  | isOne' a = One
+  | let      = Pos a
+
+diff' a b =
+  fromMaybe one $ divide a (gcd a b)
+
+subeq' a b =
+  isJust $ divide b a
+
+
+safeNeg' a
+  | isOne'  a = Zero
+  | isZero' a = One
+  | let       = Neg a
+
+safePos' a
+  | isOne'  a = One
+  | isZero' a = Zero
+  | let       = Pos a
+
+-----
+
+singleton  = safePos' . getDistinct
+insert p s = s ∪ singleton p
+delete p s = s ∖ singleton p
+member p s = singleton p ⊆ s
+
+toList :: _ => Divisibility a -> [Prime a]
+toList = \case
+  One   -> []
+  Zero  -> primes
+  Pos a -> fst <$> factorise a
+  Neg a -> filter (coprime a . unPrime) primes
+
+----
+
+type instance Element (Divisibility a)
+   = DistinctFactors a
+
+instance GcdDomain a => MonoPointed (Divisibility a) where
+  opoint = singleton
+
+instance
+  ( Integral a
+  , UniqueFactorisation a
+  , GcdDomain a
+  ) => MonoFoldable (Divisibility a)
+  where
+
+    ofoldr f e =
+      foldr (f . fromPrime) e . toList
+
+    ofoldl' f e =
+      foldl' (\a -> f a . fromPrime) e . toList
+
+    ofoldMap f =
+      foldMap (f . fromPrime) . toList
+
+    ofoldl1Ex' f =
+      ofoldl1Ex' f . map fromPrime . toList
+
+    ofoldr1Ex f =
+      ofoldr1Ex f . map fromPrime . toList
+
+instance
+  ( Integral a
+  , UniqueFactorisation a
+  , GcdDomain a
+  ) => GrowingAppend (Divisibility a)
+
+instance
+  ( Eq (DistinctFactors a)
+  , Integral a
+  , UniqueFactorisation a
+  , GcdDomain a
+  ) => M.SetContainer (Divisibility a)
+  where
+    type ContainerKey (Divisibility a) = DistinctFactors a
+
+    member        = member
+    notMember a b = not $ member a b
+    union         = union
+    difference    = diff
+    intersection  = intersect
+    keys          = map fromPrime . toList
+
+instance
+  ( Eq (DistinctFactors a)
+  , Integral a
+  , UniqueFactorisation a
+  , GcdDomain a
+  ) => M.IsSet (Divisibility a)
+  where
+    insertSet    = insert
+    deleteSet    = delete
+    singletonSet = singleton
+    setFromList  = safePos' . product . map getDistinct
+    setToList    = M.keys
+
+    -- This could definitly be more clever,
+    -- but I don't know if it's actually useful!
+    --
+    filterSet f = \case
+      One -> One
+      Pos a | f (unsafeDistinct a) -> Pos a
+      a -> M.setFromList . filter f $ M.setToList a
 
