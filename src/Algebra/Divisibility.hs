@@ -38,9 +38,9 @@ data Divisibility a = Neg a | Zero | One | Pos a
   deriving
     ( Lattice, BoundedJoinSemiLattice, BoundedMeetSemiLattice
     , Eq
-    -- , Ord
     , PartialOrd, Heyting
     , Semigroup, Monoid, Group
+    -- , Ord
     -- , Semiring, Ring, GcdDomain, Euclidean
     )
     via WrappedSet (Divisibility a)
@@ -216,7 +216,6 @@ instance
   , GcdDomain a
   ) => MonoFoldable (Divisibility a)
   where
-
     ofoldr f e =
       foldr (f . fromPrime) e . toList
 

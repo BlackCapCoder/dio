@@ -99,9 +99,6 @@ instance Set a => Heyting (WrappedSet a) where
   neg     = complement
   x ==> y = neg x ∪ y
 
--- instance Set a => Ord (WrappedSet a) where
---   a <= b = isTop $ a ==> b
-
 instance Set a => Semigroup  (WrappedSet a) where (<>)   = (∪)
 instance Set a => Monoid     (WrappedSet a) where mempty = bot
 instance Set a => Unit       (WrappedSet a) where unit   = bot
@@ -131,6 +128,9 @@ instance Set a => Reductive (WrappedSet a) where
 instance Set a => OverlappingGCDMonoid (WrappedSet a) where
   stripOverlap a b = (a ∖ b, a ∩ b, b ∖ a)
 
+-- instance Set a => Ord (WrappedSet a) where
+--   a <= b = isTop $ a ==> b
+--
 -- instance Set a => Semiring (WrappedSet a) where
 --   zero  = bot
 --   one   = top

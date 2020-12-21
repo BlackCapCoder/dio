@@ -18,6 +18,8 @@ dependencies:
 - algebraic-graphs
 - IntervalMap
 - mono-traversable
+- profunctors
+- witherable-class
 # - data-ordlist
 tests:
   full:
