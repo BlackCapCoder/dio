@@ -1,4 +1,4 @@
-module ListZipper where
+module Data.ListZipper where
 
 
 -- A finitary list zipper

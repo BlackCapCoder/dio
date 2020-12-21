@@ -1,2 +1,2 @@
-# cradle: {cabal: {component: "lib:dio"}}
-cradle: {cabal: {component: "test:full"}}
+cradle: {cabal: {component: "lib:dio"}}
+# cradle: {cabal: {component: "test:full"}}

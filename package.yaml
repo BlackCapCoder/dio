@@ -10,6 +10,13 @@ dependencies:
 - integer-roots
 - semirings
 - monad-loops
+- lattices
+- monoid-subclasses
+- groups
+- semigroupoids
+- comonad
+- algebraic-graphs
+- IntervalMap
 tests:
   full:
     main:                Main.hs
@@ -17,7 +24,6 @@ tests:
     dependencies:
     - dio
     - microspec
-
 default-extensions:
 - AllowAmbiguousTypes
 - ApplicativeDo

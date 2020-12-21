@@ -7,7 +7,7 @@ module Fucktoid where
 import Data.Semigroup
 import Control.Monad.Loops (iterateUntilM)
 
-import ListZipper
+import Data.ListZipper
 import Pogo
 import Iso
 
