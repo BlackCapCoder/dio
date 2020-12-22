@@ -20,6 +20,8 @@ dependencies:
 - mono-traversable
 - profunctors
 - witherable-class
+- these
+- tree-traversals
 # - data-ordlist
 tests:
   full:

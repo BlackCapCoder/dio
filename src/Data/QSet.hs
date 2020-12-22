@@ -1,12 +1,14 @@
 {-# LANGUAGE NoArrows #-}
 module Data.QSet where
 
-import Prelude hiding (filter)
+import Prelude hiding (filter, mapMaybe)
 
 import Iso
 import Data.Unfoldable
 import Control.Search qualified as S
 import Control.Search (SearchT)
+import Control.Monad.Trans.Cont
+import Control.Monad.Trans.Select
 
 import Data.Functor.Apply
 import Data.Functor.Bind as B
@@ -18,37 +20,35 @@ import Algebra.Lattice hiding (top)
 import Algebra.Lattice qualified
 import Algebra.PartialOrd
 import Algebra.Heyting
+import Data.Profunctor
 
 
-newtype QSet a
-      = QSet { toSearch :: SearchT Maybe () a }
+newtype QSet r a
+      = QSet { toSearch :: SearchT Maybe r a }
   deriving newtype
     ( Pointed
     , Functor, Apply, Applicative, Monad
     , Alternative, MonadPlus, MonadFail
     , Filterable, Semialign, Zip
+    , Profunctor
     )
-  deriving
-    ( Lattice, BoundedJoinSemiLattice, BoundedMeetSemiLattice
-    , Eq
-    , PartialOrd, Heyting
-    , Group
-    )
-    via WrappedSet (QSet a)
+--   deriving
+--     ( Lattice, BoundedJoinSemiLattice, BoundedMeetSemiLattice
+--     , Eq
+--     , PartialOrd, Heyting
+--     , Group
+--     )
+--     via WrappedSet (QSet a)
 
 
-fromSearch :: SearchT Maybe () a -> QSet a
+fromSearch :: SearchT Maybe r a -> QSet r a
 fromSearch = coerce
 
-qset :: ∀ a. ((a -> Bool) -> Maybe a) -> QSet a
-qset = QSet . S.searchT . q
-  where
-    q f g = f $ pro isoMUnitBool . g
+qset :: ((a -> Maybe r) -> Maybe a) -> QSet r a
+qset = QSet . S.searchT
 
-find :: QSet a -> (a -> Bool) -> Maybe a
-find = toSearch
-   >>> S.runSearchT
-   >>> \f p -> f $ con isoMUnitBool . p
+find :: QSet r a -> (a -> Maybe r) -> Maybe a
+find = S.runSearchT . toSearch
 
 ----
 
@@ -56,29 +56,38 @@ isoMUnitBool :: Maybe () <-> Bool
 isoMUnitBool =
   Iso isJust \x -> () <$ guard x
 
-isoQSetSearch :: QSet a <-> SearchT Maybe () a
+isoQSetSearch :: QSet r a <-> SearchT Maybe r a
 isoQSetSearch =
   Iso coerce coerce
 
+toCont :: QSet r a -> ContT r Maybe a
+toCont = toSearch >>> S.searchToContT
+
+fromCont :: ContT a Maybe a -> QSet a a
+fromCont = qset . runContT
+
 ----
 
-instance Semigroup (QSet a) where
+instance Semigroup (QSet r a) where
   s <> t = B.join (pair s t)
 
-instance Monoid (QSet a) where
+instance Monoid (QSet r a) where
   mempty = qset $ const Nothing
 
-instance Bind QSet where
+instance Bind (QSet r) where
   join ss = qset \p ->
     flip find p -<< find ss \s -> forsome s p
 
-instance Unfoldable QSet where
+instance Unfoldable (QSet r) where
   unfold = foldr insert mempty
 
-instance (Show a, Eq a) => Show (QSet a) where
+-- instance Foldable (QSet r) where
+--   foldr f e = foldr f e . setToList
+
+instance (Show a, Eq a) => Show (QSet b a) where
   show = show . setToList
 
-instance Eq a => Set (QSet a)
+instance Eq a => Set (QSet b a)
   where
     bot
       = mempty
@@ -89,8 +98,8 @@ instance Eq a => Set (QSet a)
     intersect a b
       = filter (contains b) a
 
-    subeq a b
-      = forevery a $ contains b
+    -- subeq a b
+    --   = forevery a $ contains b
 
     diff a b
       = filter (not . contains b) a
@@ -100,30 +109,37 @@ instance Eq a => Set (QSet a)
 
 ----
 
-forsome :: QSet a -> (a -> Bool) -> Bool
-forsome s p = maybe False p (find s p)
+forsome :: QSet r a -> (a -> Maybe r) -> Maybe r
+forsome = runContT . toCont
 
-forevery :: QSet a -> (a -> Bool) -> Bool
-forevery s p = not (forsome s (not . p))
+forevery :: ∀ r a. QSet r a -> (a -> Maybe r) -> Bool
+forevery s p = isNothing $ forsome s $ p >>> \case
+  Just _  -> Nothing
+  Nothing -> Just case () of {}
 
+pair :: a -> a -> QSet r a
+pair x y = qset \p -> pure if isJust $ p x then x else y
 
-pair :: a -> a -> QSet a
-pair x y = qset \p -> if p x then pure x else pure y
-
-insert :: a -> QSet a -> QSet a
+insert :: a -> QSet r a -> QSet r a
 insert a s = point a <> s
 
+query :: (a -> b -> Maybe r) -> a -> QSet r b -> Maybe r
+query choose = flip forsome . choose
 
-contains :: (Eq a) => QSet a -> a -> Bool
-contains s x = forsome s (== x)
+member :: Eq a => a -> QSet b a -> Bool
+member s =
+  isJust . query (\a b -> undefined <$ guard (a == b)) s
 
-member :: (Eq a) => a -> QSet a -> Bool
-member = flip contains
+contains :: Eq a => QSet b a -> a -> Bool
+contains = flip member
 
 ----
 
+bool :: (a -> Bool) -> (a -> Maybe a)
+bool f a = a <$ guard (f a)
+
 peek s
-  = find s \_ -> True
+  = find s \_ -> Just undefined
 
 pop s = do
   x <- peek s
@@ -132,14 +148,6 @@ pop s = do
 setToList
   = unfoldr pop
 
-setFromList
-  = foldMap point
-
-
--- instance Foldable QSet where
---   foldr f e = foldr f e . setToList
-
-----
-
-bits = pair False True
+setFromList :: [a] -> QSet r a
+setFromList = unfold
 

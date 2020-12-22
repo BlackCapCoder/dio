@@ -94,17 +94,14 @@ before ab = edit \bc ca -> bc (ab . ca)
 
 ----
 
-class Choose a b where
-  choose :: a -> a -> b
+member choose
+  = flip forsomeT . choose
 
-member
-  = flip forsome . choose
+contains choose
+  = flip (member choose)
 
-contains
-  = flip member
-
-subset s
-  = foreveryT s . contains
+subset choose s
+  = foreveryT s . (contains choose)
 
 
 forsome :: Search r a -> (a -> r) -> r

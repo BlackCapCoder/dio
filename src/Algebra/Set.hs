@@ -55,6 +55,12 @@ class Set s
   complement a =
     top ∖ a
 
+  intersect a b =
+    complement $ complement a ∪ complement b
+
+  union a b =
+    complement $ complement a ∩ complement b
+
 ----
 
 supeq = flip subeq
